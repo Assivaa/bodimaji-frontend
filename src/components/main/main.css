@@ -1,0 +1,28 @@
+.main {
+  padding: 88px 0px 0px 80px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.header {
+  padding-bottom: 14px;
+  font-size: 64px;
+  font-weight: 700px;
+  line-height: 86px;
+}
+
+.description {
+  padding-bottom: 88px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+}
+
+.button-explore {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+}
