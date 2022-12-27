@@ -7,8 +7,11 @@ const Navbar = () => {
       className="navbar"
       style={{ display: "flex", justifyContent: "space-between" }}
     >
-      <div className="logo" style={{ display: "flex" }}>
-        BODIMAJI
+      <div className="logo">
+        <img
+          src={require("../../resources/icons/bodimaji-logo.png")}
+          alt="image"
+        />
       </div>
       <div
         className=""

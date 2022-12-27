@@ -53,6 +53,13 @@
   border-radius: 10px;
 }
 
+.discover-button img {
+  padding-left: 37px;
+  object-fit: cover;
+  width: 28px;
+  height: 18px;
+}
+
 .carousel-image {
   padding: 32px 98px 67px 0px;
   display: flex;

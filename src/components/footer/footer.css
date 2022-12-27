@@ -1,0 +1,43 @@
+.footer {
+  background: #fcfcfc;
+  height: 245px;
+  padding: 39px 80px 0px 80px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.footer-logo img {
+  width: 25px;
+  height: 27.67px;
+  object-fit: cover;
+  padding-bottom: 19.33px;
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.footer-menu.social {
+  display: flex;
+  flex-direction: row;
+  gap: 16.43px;
+}
+
+.footer-header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer-item {
+  padding-top: 12px;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration-line: underline;
+}
+
+.address {
+  text-decoration: none;
+}

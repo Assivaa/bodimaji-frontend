@@ -24,6 +24,11 @@
   line-height: 39px;
 }
 
+.logo img {
+  width: 202.54px;
+  height: 45px;
+}
+
 .menu-item {
   display: flex;
   flex-direction: row;

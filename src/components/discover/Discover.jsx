@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./discover.css";
 
+import arrowRight from "../../resources/icons/icon-arrow-right.svg";
+
 const Discover = () => {
   return (
     <div className="discover">
@@ -13,7 +15,10 @@ const Discover = () => {
         </div>
         <div></div>
         <div className="discover-interact">
-          <button className="discover-button">See All</button>
+          <button className="discover-button">
+            See All
+            <img src={arrowRight} alt="image" />
+          </button>
         </div>
       </div>
       <div className="discover-carousel">
@@ -47,7 +52,10 @@ const Discover = () => {
         </div>
         <div></div>
         <div className="discover-interact">
-          <button className="discover-button">See All</button>
+          <button className="discover-button">
+            Read
+            <img src={arrowRight} alt="image" />
+          </button>
         </div>
       </div>
       <div className="discover-carousel">
