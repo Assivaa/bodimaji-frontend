@@ -1,4 +1,7 @@
 .main {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
   padding: 88px 0px 0px 80px;
 }
 
@@ -7,22 +10,43 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.container-item img {
+  object-fit: cover;
+  width: 630px;
+  height: 501px;
+}
+
 .header {
-  padding-bottom: 14px;
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
   font-size: 64px;
   font-weight: 700px;
+  padding-bottom: 14px;
   line-height: 86px;
 }
 
 .description {
-  padding-bottom: 88px;
+  font-family: "Arapey";
+  font-style: normal;
   font-weight: 400;
   font-size: 32px;
+  padding-bottom: 88px;
   line-height: 35px;
 }
 
 .button-explore {
   font-weight: 700;
   font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 39px;
+  color: #fcfcfc;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 54px;
+  background: #272727;
+  border: 1px solid #272727;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
 }
