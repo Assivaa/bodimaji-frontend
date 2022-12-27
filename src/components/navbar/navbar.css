@@ -27,6 +27,7 @@
 .logo img {
   width: 202.54px;
   height: 45px;
+  cursor: pointer;
 }
 
 .menu-item {
@@ -38,4 +39,5 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  cursor: pointer;
 }

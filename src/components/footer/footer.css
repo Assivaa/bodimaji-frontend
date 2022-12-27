@@ -23,6 +23,7 @@
   display: flex;
   flex-direction: row;
   gap: 16.43px;
+  cursor: pointer;
 }
 
 .footer-header {
@@ -36,6 +37,7 @@
   font-size: 20px;
   line-height: 24px;
   text-decoration-line: underline;
+  cursor: pointer;
 }
 
 .address {
