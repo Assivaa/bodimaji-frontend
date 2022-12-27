@@ -4,6 +4,7 @@ import {
   Routes,
 } from "react-router-dom";
 import Home from "./pages/home/Home.jsx";
+import News from "./pages/articles/Articles.jsx";
 
 function App() {
   return <BrowserRouter>
