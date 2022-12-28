@@ -3,7 +3,7 @@ import "./about.css";
 
 import arrowRight from "../../resources/icons/icon-arrow-right.svg";
 
-const About = () => {
+const AboutPage = () => {
   return (
     <div className="articles">
         <div className="container">      
@@ -67,4 +67,4 @@ Sometimes it makes you questioning your own. Therefore, <b>BODIMAJI</b> believes
   );
 };
 
-export default About;
+export default AboutPage;
