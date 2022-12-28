@@ -1,0 +1,184 @@
+.features-container {
+    background: url(../../resources/images/login-register-alt.jpeg);
+    position: absolute;
+    width: 1440px;
+    height: 1755px;
+    left: 0px;
+    top: 129px;
+}
+
+.container {
+    position: absolute;
+    width: 1280px;
+    height: 807px;
+    left: 80px;
+    top: 186px;
+    background: rgba(230, 229, 226, 0.8);
+}
+
+.createaccount {
+    position: absolute;
+    width: 284px;
+    height: 54px;
+    left: 578px;
+    top: 249px;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.xxxaspartofbodimaji {
+    position: absolute;
+    width: 202px;
+    height: 19px;
+    left: 622px;
+    top: 315px;
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.Rectangle1 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 416px;
+    height: 50px;
+    left: 512px;
+    top: 366px;
+    background: #E6E5E2;
+    border: 1px solid #951914;
+    border-radius: 8px;
+}
+
+.checkbox {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 562px;
+    top: 660px;
+}
+
+.term {
+    position: absolute;
+    width: 187px;
+    height: 15px;
+    left: 596px;
+    top: 660px;
+    font-family: 'Arapey';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.Rectangle2 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 416px;
+    height: 55px;
+    left: 512px;
+    top: 703px;
+    background: #272727;
+    border: 1px solid #272727;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+}
+
+.register {
+    /* Register */
+    position: absolute;
+    width: 106px;
+    height: 31px;
+    left: 667px;
+    top: 715px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FCFCFC;
+}
+
+.signupwith {
+    /* or sign up with */
+    position: absolute;
+    width: 120px;
+    height: 22px;
+    left: 660px;
+    top: 782px;
+    font-family: 'Arapey';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.googleicon {
+    /* logos:google-icon */
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 697px;
+    top: 818px;
+}
+
+.facebookicon {
+    /* logos:facebook */
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 744px;
+    top: 818px;
+}
+
+.alreadyhaveaccount {
+    position: absolute;
+    width: 202px;
+    height: 22px;
+    left: 620px;
+    top: 866px;
+    font-family: 'Arapey';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.Rectangle3 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 416px;
+    height: 55px;
+    left: 521px;
+    top: 912px;
+    background: #E6E5E2;
+    border: 1px solid #951914;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+}
+
+.login {
+    position: absolute;
+    width: 71px;
+    height: 31px;
+    left: 685px;
+    top: 924px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #0D0D0D;
+}
