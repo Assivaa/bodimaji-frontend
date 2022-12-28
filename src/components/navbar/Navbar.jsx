@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./navbar.css";
 
 const Navbar = () => {
@@ -21,10 +22,10 @@ const Navbar = () => {
           justifyContent: "space-around",
         }}
       >
-        <div className="menu-item">Home</div>
-        <div className="menu-item">About</div>
-        <div className="menu-item">Article</div>
-        <div className="menu-item">Register/Login</div>
+        <div className="menu-item"><NavLink to='/'>Home</NavLink></div>
+        <div className="menu-item"><NavLink to='/about'>About</NavLink></div>
+        <div className="menu-item"><NavLink to='/article'>Article</NavLink></div>
+        <div className="menu-item"><NavLink to='/register'>Register/Login</NavLink></div>
       </div>
     </div>
   );
