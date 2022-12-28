@@ -21,18 +21,10 @@ const Navbar = () => {
           justifyContent: "space-around",
         }}
       >
-        <div className="menu-item" style={{ display: "flex" }}>
-          Home
-        </div>
-        <div className="menu-item" style={{ display: "flex" }}>
-          About
-        </div>
-        <div className="menu-item" style={{ display: "flex" }}>
-          Article
-        </div>
-        <div className="menu-item" style={{ display: "flex" }}>
-          Register/Login
-        </div>
+        <div className="menu-item">Home</div>
+        <div className="menu-item">About</div>
+        <div className="menu-item">Article</div>
+        <div className="menu-item">Register/Login</div>
       </div>
     </div>
   );
