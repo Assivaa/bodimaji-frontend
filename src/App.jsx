@@ -3,6 +3,8 @@ import Home from "./pages/home/Home.jsx";
 import About from "./pages/about/About.jsx";
 import News from "./pages/articles/Articles.jsx";
 import Article from "./pages/article/Article.jsx";
+import UserLogin from "./pages/login/Login.jsx";
+import UserRegister from "./pages/register/Register.jsx";
 
 function App() {
   return (
@@ -19,6 +21,12 @@ function App() {
         </Route>
         <Route path="/article">
           <Route index element={<Article />} />
+        </Route>
+        <Route path="/login">
+          <Route index element={<UserLogin />} />
+        </Route>
+        <Route path="/register">
+          <Route index element={<UserRegister />} />
         </Route>
       </Routes>
     </BrowserRouter>
