@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { FaShoppingCart } from 'react-icons/fa';
+
 import "./navbar.css";
 
 const Navbar = () => {
@@ -26,6 +28,8 @@ const Navbar = () => {
         <div className="menu-item"><NavLink to='/about'>About</NavLink></div>
         <div className="menu-item"><NavLink to='/article'>Article</NavLink></div>
         <div className="menu-item"><NavLink to='/register'>Register/Login</NavLink></div>
+        <div><NavLink to='/cart'><FaShoppingCart /> Cart </NavLink></div>
+
       </div>
     </div>
   );

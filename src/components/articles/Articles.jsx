@@ -4,7 +4,7 @@ import "./articles.css";
 const Articles = () => {
   return (
     <div className="articles">
-     Hello world
+     article
     </div>
   );
 };
