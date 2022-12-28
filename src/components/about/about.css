@@ -18,7 +18,7 @@
 
      .rectangle {
        line-height: 86px;
-       width: 1064px;
+       width: 900px;
        height: 218px;
        background: #D9D9D9;
 
@@ -101,13 +101,13 @@
        font-weight: 400;
        font-size: 24px;
        line-height: 26px;
-       padding-bottom: 30px;
+       padding-bottom: 10px;
        padding-top: 20px;
 
        margin-right: -310px;
        margin-left: 350px;
        margin-top: -500px;
-       margin-bottom: 500px;
+       margin-bottom: 480px;
      }
      .desc4{
        font-family: 'Arapey';
@@ -143,7 +143,7 @@
        margin-bottom: 50px;
        margin-top: -800px;
        padding-top: 30px;
-       width: 1280px;
+       width: 1080px;
        height: 323px;
      }
 
