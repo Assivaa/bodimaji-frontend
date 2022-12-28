@@ -1,5 +1,8 @@
 .article {
   padding: 0px 80px 0px 80px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
 }
 
 .article-header-title {
@@ -18,9 +21,6 @@
 }
 
 .article-category {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   padding: 32px 0px 18px 0px;
@@ -47,37 +47,84 @@
 .article-container {
   padding-top: 148px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 40px;
+  grid-template-columns: 2fr 1fr;
+  gap: 69px;
 }
 
 .article-related {
-  background-color: aqua;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
 }
 
-.article-related-detail {
+.article-related-header,
+.article-related-footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
 }
 
-.article-related-image img {
-  width: 554px;
+.article-related-head {
+  flex-grow: 1;
+}
+
+.article-related-views {
+  padding: 18px;
+  flex-grow: 1;
+}
+
+.icon-profile,
+.icon-bookmark,
+.icon-like {
+  padding: 18px;
+  height: 24px !important;
+  width: 24px !important;
+}
+
+.article-related-content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+}
+
+.article-related-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.article-related-description {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.post img {
+  width: 100%;
   height: 233px;
   object-fit: cover;
 }
 
+.icon-profile,
+.icon-bookmark {
+  padding: 18px;
+  height: 24px !important;
+  width: 24px !important;
+}
+
 .related-list-category {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
   font-size: 24px;
   line-height: 29px;
 }
 
 .related-list-title {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
