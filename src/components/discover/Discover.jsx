@@ -54,7 +54,7 @@ const Discover = () => {
         <div className="discover-interact">
           <button className="discover-button">
             Read
-            <img src={arrowRight} alt="image" />
+            <img src={arrowRight} alt="arrow-right" />
           </button>
         </div>
       </div>

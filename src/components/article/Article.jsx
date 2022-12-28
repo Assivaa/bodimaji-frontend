@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./article.css";
 
+import iconProfile from "../../resources/icons/icon-profile.svg";
+import iconBookmark from "../../resources/icons/icon-bookmark.svg";
+import iconLike from "../../resources/icons/icon-like.svg";
+
 const ArticlePage = () => {
   return (
     <div className="article">
@@ -10,7 +14,7 @@ const ArticlePage = () => {
         </div>
         <img
           src={require("../../resources/images/article-alt.jpeg")}
-          alt="image"
+          alt="article"
         />
         <div className="article-category">Tips Pemula</div>
       </div>
@@ -48,19 +52,144 @@ const ArticlePage = () => {
       </div>
       <div className="article-container">
         <div className="article-related">
-          <div className="article-related-image">
+          <div className="post">
             <img
               src={require("../../resources/images/article-related-alt.png")}
-              alt="image"
+              alt="related"
             />
+            <div className="article-related-header">
+              <img
+                className="icon-profile"
+                src={iconProfile}
+                alt="icon-profile"
+              />
+              <div className="article-related-head">
+                <div className="article-related-author">Diana Silver</div>
+                <div className="article-related-time">4 Mins Read</div>
+              </div>
+              <img
+                className="icon-bookmark"
+                src={iconBookmark}
+                alt="icon-bookmark"
+              />
+            </div>
+
+            <div className="article-related-content">
+              <div className="article-related-title">
+                Unlocking Fashion, Circular Economy, and Sustainability
+              </div>
+              <div className="article-related-description">
+                We have been very aware fashion has been causing harmful
+                environmental and social impacts since a long time ago. The
+                fashion industry always promises We have been very aware fashion
+                has been causing harmful environmental and social impacts since
+                a long time ago. The fashion industry always promises We have
+                been very aware fashion has been causing harmful environmental
+                and social impacts since a long time ago. The fashion industry
+                always promises... We have been very aware fashion has been
+                causing harmful environmental and social impacts since a long
+                time ago. The fashion industry always promises We have been very
+                aware fashion has been causing harmful environmental and social
+                impacts since a long time ago. The fashion industry always
+                promises We have been very aware fashion has been causing
+                harmful environmental and social impacts since a long time ago.
+                The fashion industry always promises We have been very aware
+                fashion has been causing harmful environmental and social
+                impacts since a long time ago. The fashion industry always
+                promises... We have been very aware fashion has been causing
+                harmful environmental and social impacts since a long time ago.
+                The fashion industry always promises We have been very aware
+                fashion has been causing harmful environmental and social
+                impacts since a long time ago. The fashion industry always
+                promises We have been very aware fashion has been causing
+                harmful environmental and social impacts since a long time ago.
+                The fashion industry always promises We have been very aware
+                fashion has been causing harmful environmental and social
+                impacts since a long time ago. The fashion industry always
+                promises... We have been very aware fashion has been causing
+                harmful environmental and social impacts since a long time ago.
+                The fashion industry always promises
+              </div>
+            </div>
+
+            <div className="article-related-footer">
+              <div className="article-related-views">
+                <div className="article-related-author">80 Views</div>
+              </div>
+              <div className="article-related-author">42</div>
+              <img className="icon-like" src={iconLike} alt="icon-like" />
+            </div>
           </div>
-          <div className="article-related-detail">
-            <img src="" alt="avatar" />
-            <div className="article-related-author">Diana Silver</div>
-            <img src="" alt="add to bookmark" />
+
+          <div className="post">
+            <img
+              src={require("../../resources/images/article-related-alt.png")}
+              alt="related"
+            />
+            <div className="article-related-header">
+              <img
+                className="icon-profile"
+                src={iconProfile}
+                alt="icon-profile"
+              />
+              <div className="article-related-head">
+                <div className="article-related-author">Diana Silver</div>
+                <div className="article-related-time">4 Mins Read</div>
+              </div>
+              <img
+                className="icon-bookmark"
+                src={iconBookmark}
+                alt="icon-bookmark"
+              />
+            </div>
+
+            <div className="article-related-content">
+              <div className="article-related-title">
+                Unlocking Fashion, Circular Economy, and Sustainability
+              </div>
+              <div className="article-related-description">
+                We have been very aware fashion has been causing harmful
+                environmental and social impacts since a long time ago. The
+                fashion industry always promises We have been very aware fashion
+                has been causing harmful environmental and social impacts since
+                a long time ago. The fashion industry always promises We have
+                been very aware fashion has been causing harmful environmental
+                and social impacts since a long time ago. The fashion industry
+                always promises... We have been very aware fashion has been
+                causing harmful environmental and social impacts since a long
+                time ago. The fashion industry always promises We have been very
+                aware fashion has been causing harmful environmental and social
+                impacts since a long time ago. The fashion industry always
+                promises We have been very aware fashion has been causing
+                harmful environmental and social impacts since a long time ago.
+                The fashion industry always promises We have been very aware
+                fashion has been causing harmful environmental and social
+                impacts since a long time ago. The fashion industry always
+                promises... We have been very aware fashion has been causing
+                harmful environmental and social impacts since a long time ago.
+                The fashion industry always promises We have been very aware
+                fashion has been causing harmful environmental and social
+                impacts since a long time ago. The fashion industry always
+                promises We have been very aware fashion has been causing
+                harmful environmental and social impacts since a long time ago.
+                The fashion industry always promises We have been very aware
+                fashion has been causing harmful environmental and social
+                impacts since a long time ago. The fashion industry always
+                promises... We have been very aware fashion has been causing
+                harmful environmental and social impacts since a long time ago.
+                The fashion industry always promises
+              </div>
+            </div>
+
+            <div className="article-related-footer">
+              <div className="article-related-views">
+                <div className="article-related-author">80 Views</div>
+              </div>
+              <div className="article-related-author">42</div>
+              <img className="icon-like" src={iconLike} alt="icon-like" />
+            </div>
           </div>
         </div>
-        <div className="article-related"></div>
         <div className="article-related-list">
           <div className="related-list-container">
             <div className="related-list-category">Tips Pemula</div>
