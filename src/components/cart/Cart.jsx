@@ -12,12 +12,6 @@ const CartPage = () => {
             alt="image"
           />
           <div className="cart_title">Everyone Shirt in pearl</div>
-          <div className="cart_desc">
-          Lorem ipsum dolor sit amet, consectetur adipisicing<br/>
-          elit. Enim minus quae ut omnis sunt delectus odio <br/>
-          temporibus! Eius dolore ex vitae esse, similique quo<br/>
-          velit est hic non delectus nam!
-      </div>
          
          <p className="price">Rp200.000</p>
       <Link to={`/product`} className="info_button">
@@ -32,12 +26,6 @@ const CartPage = () => {
             alt="image"
           />
           <div className="cart_title">Everyone Shirt in pearl</div>
-          <div className="cart_desc">
-          Lorem ipsum dolor sit amet, consectetur adipisicing<br/>
-          elit. Enim minus quae ut omnis sunt delectus odio <br/>
-          temporibus! Eius dolore ex vitae esse, similique quo<br/>
-          velit est hic non delectus nam!
-      </div>
          
          <p className="price">Rp200.000</p>
       <Link to={`/product`} className="info_button">
@@ -52,12 +40,6 @@ const CartPage = () => {
             alt="image"
           />
           <div className="cart_title">Everyone Shirt in pearl</div>
-          <div className="cart_desc">
-          Lorem ipsum dolor sit amet, consectetur adipisicing<br/>
-          elit. Enim minus quae ut omnis sunt delectus odio <br/>
-          temporibus! Eius dolore ex vitae esse, similique quo<br/>
-          velit est hic non delectus nam!
-      </div>
          
          <p className="price">Rp200.000</p>
       <Link to={`/product`} className="info_button">
@@ -72,12 +54,6 @@ const CartPage = () => {
             alt="image"
           />
           <div className="cart_title">Everyone Shirt in pearl</div>
-          <div className="cart_desc">
-          Lorem ipsum dolor sit amet, consectetur adipisicing<br/>
-          elit. Enim minus quae ut omnis sunt delectus odio <br/>
-          temporibus! Eius dolore ex vitae esse, similique quo<br/>
-          velit est hic non delectus nam!
-      </div>
          
          <p className="price">Rp200.000</p>
       <Link to={`/product`} className="info_button">

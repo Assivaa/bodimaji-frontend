@@ -14,7 +14,7 @@
        display: flex;
        flex-flow: column;
        width: 400px;
-       height: 620px;
+       height: 540px;
        margin-left: 140px;
        margin-bottom: 20px;
        box-shadow: 0px 6px 5px rgba(5, 5, 255, 0.17);
@@ -36,7 +36,7 @@
        display: flex;
        flex-flow: column;
        width: 400px;
-       height: 620px;
+       height: 540px;
        margin-left: 140px;
        margin-bottom: 360px;
        box-shadow: 0px 6px 5px rgba(5, 5, 255, 0.17);
@@ -58,7 +58,7 @@
        font-family: 'Abril Fatface';
        font-size: 27px;
        font-weight: bolder;
-       margin-left: 37px;
+       margin-left: 54px;
        margin-bottom: 10px;
 }
 .cart_desc{
@@ -66,14 +66,14 @@
 }
 
 .price{
-       margin-left: 37px;
+       margin-left: 155px;
        color: #951914;
        margin-top: 10px;
        font-weight: bold;
        font-size: 20px;
 }
 .info_button{
-       margin-left: 37px;
+       margin-left: 45px;
        margin-top: -3px;
        
        display: block;
@@ -85,7 +85,7 @@
        -webkit-filter: drop-shadow(0 6px 0px rgba(56, 125, 255, 0.017));
        filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
        border-radius: 10px;
-       width: 110px;
+       width: 90px;
 
 }
 .info_button:hover{
@@ -99,9 +99,9 @@
        display: flex;
        flex-flow: column;
        width: 400px;
-       height: 620px;
+       height: 540px;
        margin-left: 700px;
-       margin-top: -1660px;
+       margin-top: -1500px;
        margin-bottom: 200px;
        box-shadow: 0px 6px 5px rgba(5, 5, 255, 0.17);
        -webkit-filter: drop-shadow(0 6px 0px rgba(56, 125, 255, 0.017));
@@ -122,7 +122,7 @@
        display: flex;
        flex-flow: column;
        width: 400px;
-       height: 620px;
+       height: 540px;
        margin-left: 700px;
        margin-top: -178px;
        margin-bottom: 90px;
