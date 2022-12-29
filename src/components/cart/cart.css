@@ -1,0 +1,142 @@
+.title{
+       font-family: 'Abril Fatface';
+       font-style: normal;
+       font-weight: 400;
+       font-size: 25px;
+       line-height: 54px;
+       padding-top: 20px;
+       padding-left: 80px;
+       margin-bottom: 40px;
+       margin-left: 430px;
+       margin-top: 20px;
+}
+.image5{
+       display: flex;
+       flex-flow: column;
+       width: 400px;
+       height: 620px;
+       margin-left: 140px;
+       margin-bottom: 20px;
+       box-shadow: 0px 6px 5px rgba(5, 5, 255, 0.17);
+       -webkit-filter: drop-shadow(0 6px 0px rgba(56, 125, 255, 0.017));
+       filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+       border-radius: 30px;
+}
+.image5 img{    
+       object-fit: cover;
+       border-radius: 30px;
+       margin-left: 32px;
+       width: 320px;
+       height: 343px;
+       margin-bottom: 50px;
+       padding-left: 7px;
+}
+
+.image2{
+       display: flex;
+       flex-flow: column;
+       width: 400px;
+       height: 620px;
+       margin-left: 140px;
+       margin-bottom: 360px;
+       box-shadow: 0px 6px 5px rgba(5, 5, 255, 0.17);
+       -webkit-filter: drop-shadow(0 6px 0px rgba(56, 125, 255, 0.017));
+       filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+       border-radius: 30px;
+}
+.image2 img{    
+       object-fit: cover;
+       border-radius: 30px;
+       margin-left: 32px;
+       width: 320px;
+       height: 343px;
+       margin-bottom: 50px;
+       padding-left: 7px;
+}
+.cart_title{
+       margin-top: -30px;
+       font-family: 'Abril Fatface';
+       font-size: 27px;
+       font-weight: bolder;
+       margin-left: 37px;
+       margin-bottom: 10px;
+}
+.cart_desc{
+       margin-left: 37px;
+}
+
+.price{
+       margin-left: 37px;
+       color: #951914;
+       margin-top: 10px;
+       font-weight: bold;
+       font-size: 20px;
+}
+.info_button{
+       margin-left: 37px;
+       margin-top: -3px;
+       
+       display: block;
+       text-decoration: none;
+       color: #f4f4f4;
+       background: #171717;
+       padding: 8px 116px;
+       box-shadow: 0px 6px 5px rgba(5, 5, 255, 0.17);
+       -webkit-filter: drop-shadow(0 6px 0px rgba(56, 125, 255, 0.017));
+       filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+       border-radius: 10px;
+       width: 110px;
+
+}
+.info_button:hover{
+       background: #951914;
+       color: #f4f4f4;
+}
+
+
+
+.image3{
+       display: flex;
+       flex-flow: column;
+       width: 400px;
+       height: 620px;
+       margin-left: 700px;
+       margin-top: -1660px;
+       margin-bottom: 200px;
+       box-shadow: 0px 6px 5px rgba(5, 5, 255, 0.17);
+       -webkit-filter: drop-shadow(0 6px 0px rgba(56, 125, 255, 0.017));
+       filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+       border-radius: 30px;
+}
+.image3 img{    
+       object-fit: cover;
+       border-radius: 30px;
+       margin-left: 32px;
+       width: 320px;
+       height: 343px;
+       margin-bottom: 50px;
+       padding-left: 7px;
+}
+
+.image4{
+       display: flex;
+       flex-flow: column;
+       width: 400px;
+       height: 620px;
+       margin-left: 700px;
+       margin-top: -178px;
+       margin-bottom: 90px;
+       box-shadow: 0px 6px 5px rgba(5, 5, 255, 0.17);
+       -webkit-filter: drop-shadow(0 6px 0px rgba(56, 125, 255, 0.017));
+       filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+       border-radius: 30px;
+}
+.image4 img{    
+       object-fit: cover;
+       border-radius: 30px;
+       margin-left: 32px;
+       width: 320px;
+       height: 343px;
+       margin-bottom: 50px;
+       padding-left: 7px;
+}
