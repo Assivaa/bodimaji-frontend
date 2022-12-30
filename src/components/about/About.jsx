@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./about.css";
 
-import arrowRight from "../../resources/icons/icon-arrow-right.svg";
+import arrowAbout from "../../resources/icons/icon-arrow-right.svg";
 
 const AboutPage = () => {
   return (
     <div className="articles">
-        <div className="container">      
-        <div className="container-item">
+        <div className="containerabout">      
+        <div className="container-aboutpage">
         <div className="rectangle">
         <div className="font">We know how hard it's to find a piece of clothes that comes with a perfect size for your body.
 Sometimes it makes you questioning your own. Therefore, <b>BODIMAJI</b> believes that no 'body' should left behind. Through our size-inclusive daily wear clothing that crafted with love and an obsessive attention to detail.</div>
@@ -54,7 +54,7 @@ Sometimes it makes you questioning your own. Therefore, <b>BODIMAJI</b> believes
        <div className="join-interact">
           <button className="join-button">
             Join Us
-            <img src={arrowRight} alt="image" />
+            <img src={arrowAbout} alt="image" />
           </button>
        </div>
 
