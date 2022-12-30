@@ -4,8 +4,8 @@ import "./register.css";
 const RegisterPage = () => {
     return (
         <div>
-            <div className="features-container">
-                <div className="container">
+            <div className="registers">
+                <div className="register-container">
                     <div className="createaccount">
                         Create Account
                         <div className="xxxaspartofbodimaji ">
