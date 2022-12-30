@@ -1,4 +1,4 @@
-.registers {
+.registers-registers {
     /* background: url(../../resources/images/login-register-alt.jpeg); */
     width: 1440px;
     height: 1755px;
@@ -6,7 +6,7 @@
     top: 129px;
 }
 
-.container {
+.registers-container {
     width: 1280px;
     height: 807px;
     left: 80px;
@@ -14,7 +14,7 @@
     background: rgba(230, 229, 226, 0.8);
 }
 
-.createaccount {
+.registers-createaccount {
     width: 284px;
     height: 54px;
     left: 578px;
@@ -29,7 +29,7 @@
     justify-content: center;
 }
 
-.xxxaspartofbodimaji {
+.registers-xxxaspartofbodimaji {
     font-family: 'Cinzel';
     font-style: normal;
     font-weight: 400;
@@ -39,7 +39,7 @@
     color: #000000;
 }
 
-.Rectangle1 {
+.registers-Rectangle1 {
     width: 416px;
     height: 50px;
     left: 512px;
@@ -49,14 +49,14 @@
     border-radius: 8px;
 }
 
-.checkbox {
+.registers-checkbox {
     width: 18px;
     height: 18px;
     left: 562px;
     top: 660px;
 }
 
-.term {
+.registers-term {
     width: 187px;
     height: 15px;
     left: 596px;
@@ -69,7 +69,7 @@
     color: #000000;
 }
 
-.Rectangle2 {
+.registers-Rectangle2 {
     box-sizing: border-box;
     width: 416px;
     height: 55px;
@@ -81,7 +81,7 @@
     border-radius: 10px;
 }
 
-.register {
+.registers-register {
     /* Register */
     width: 106px;
     height: 31px;
@@ -95,7 +95,7 @@
     color: #FCFCFC;
 }
 
-.signupwith {
+.registers-signupwith {
     /* or sign up with */
     width: 120px;
     height: 22px;
@@ -109,7 +109,7 @@
     color: #000000;
 }
 
-.googleicon {
+.registers-googleicon {
     /* logos:google-icon */
     width: 24px;
     height: 24px;
@@ -117,7 +117,7 @@
     top: 818px;
 }
 
-.facebookicon {
+.registers-facebookicon {
     /* logos:facebook */
     width: 24px;
     height: 24px;
@@ -125,7 +125,7 @@
     top: 818px;
 }
 
-.alreadyhaveaccount {
+.registers-alreadyhaveaccount {
     width: 202px;
     height: 22px;
     left: 620px;
@@ -139,7 +139,7 @@
     color: #000000;
 }
 
-.Rectangle3 {
+.registers-Rectangle3 {
     box-sizing: border-box;
     width: 416px;
     height: 55px;
@@ -151,7 +151,7 @@
     border-radius: 10px;
 }
 
-.login {
+.registers-login {
     width: 71px;
     height: 31px;
     left: 685px;
