@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./discover.css";
-
+import { Link } from "react-router-dom";
 import arrowRight from "../../resources/icons/icon-arrow-right.svg";
 
 const Discover = () => {
@@ -16,18 +16,21 @@ const Discover = () => {
         <div></div>
         <div className="discover-interact">
           <button className="discover-button">
-            See All
+          <Link to='/collection'>See All</Link>
             <img src={arrowRight} alt="image" />
           </button>
         </div>
       </div>
       <div className="discover-carousel">
+      
         <div className="carousel-image">
-          <img
+       
+          <img 
             src={require("../../resources/images/collection-alt.jpg")}
             alt="image"
-          />
-          <a>BUY</a>
+          />        
+
+          <a> <Link to='/product'>BUY</Link></a>
         </div>
         <div className="carousel-image">
           <img

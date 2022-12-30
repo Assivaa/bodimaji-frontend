@@ -3,8 +3,9 @@ import Home from "./pages/home/Home.jsx";
 import About from "./pages/about/About.jsx";
 import News from "./pages/articles/Articles.jsx";
 import Article from "./pages/article/Article.jsx";
-import CartPage from "./pages/cart/Cart.jsx";
+import ProductPage from "./pages/product/Product";
 import Register from "./pages/register/Register.jsx";
+import AllCollection from "./pages/collections/Collections.jsx";
 
 function App() {
   return (
@@ -22,8 +23,11 @@ function App() {
         <Route path="/article">
           <Route index element={<Article />} />
         </Route>
-        <Route path="/cart">
-          <Route index element={<CartPage />} />
+        <Route path="/collection">
+          <Route index element={<AllCollection />} />
+        </Route>
+        <Route path="/product">
+          <Route index element={<ProductPage />} />
         </Route>
         <Route path="/register">
           <Route index element={<Register />} />
