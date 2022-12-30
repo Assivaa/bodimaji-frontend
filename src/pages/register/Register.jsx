@@ -1,18 +1,18 @@
 import React from "react";
 import Navbar from "../../components/navbar/Navbar";
-import Register from "../../components/register/Register";
+import UserRegister from "../../components/register/Register";
 import BeforeFooter from "../../components/beforeFooter/BeforeFooter";
 import Footer from "../../components/footer/Footer";
 
-const UserRegister = () => {
+const Register = () => {
   return (
     <>
       <Navbar />
-      <Register />
+      <UserRegister />
       <BeforeFooter />
       <Footer />
     </>
   );
 };
 
-export default UserRegister;
+export default Register;
