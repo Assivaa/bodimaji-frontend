@@ -1,18 +1,18 @@
 import React from "react";
 import Navbar from "../../components/navbar/Navbar";
-import AllCollection from "../../components/collection/Collection";
+import Product from "../../components/product/Product";
 import BeforeFooter from "../../components/beforeFooter/BeforeFooter";
 import Footer from "../../components/footer/Footer";
 
-const Collection = () => {
+const ProductPage = () => {
   return (
     <>
       <Navbar />
-      <AllCollection />
+      <Product />
       <BeforeFooter />
       <Footer />
     </>
   );
 };
 
-export default Collection;
+export default ProductPage;
