@@ -28,7 +28,7 @@ const AllCollection = () => {
           <div className="cart_title">Everyone Shirt in pearl</div>
          
          <p className="price">Rp200.000</p>
-      <Link to={`/product`} className="info_button">
+      <Link to='/product' className="info_button">
         View Detail
       </Link>
        </div>

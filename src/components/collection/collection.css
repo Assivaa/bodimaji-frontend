@@ -94,7 +94,6 @@
 }
 
 
-
 .image3{
        display: flex;
        flex-flow: column;
@@ -143,6 +142,6 @@
 .link {
        color: #FFF;
 }
-     .link:hover {
+.link:hover {
         color: #00F
 }

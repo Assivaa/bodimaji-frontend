@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./main.css";
 
 import arrowRight from "../../resources/icons/icon-arrow-right.svg";
@@ -13,7 +14,7 @@ const Main = () => {
             Size-inclusive fashion is a human right
           </div>
           <button className="button-explore">
-            Explore
+          <Link to='/collection' className="Link">Explore</Link>
             <img src={arrowRight} alt="image" />
           </button>
         </div>
