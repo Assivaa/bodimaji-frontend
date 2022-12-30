@@ -16,7 +16,7 @@ const Discover = () => {
         <div></div>
         <div className="discover-interact">
           <button className="discover-button">
-          <Link to='/collection'>See All</Link>
+          <Link to='/collection' className="Link">See All</Link>
             <img src={arrowRight} alt="image" />
           </button>
         </div>

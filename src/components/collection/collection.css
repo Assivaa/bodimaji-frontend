@@ -140,3 +140,9 @@
        margin-bottom: 50px;
        padding-left: 7px;
 }
+.link {
+       color: #FFF;
+}
+     .link:hover {
+        color: #00F
+}
