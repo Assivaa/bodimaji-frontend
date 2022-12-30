@@ -4,7 +4,7 @@ import "./register.css";
 const RegisterPage = () => {
     return (
         <div>
-            <div className="registers">
+            <div className="registers-registers">
                 <div className="registers-container">
                     <div className="registers-createaccount">
                         Create Account
