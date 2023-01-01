@@ -1,0 +1,68 @@
+.all-article-header {
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+  padding-bottom: 50px;
+}
+
+.all-article-head {
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 23.27px;
+  padding-bottom: 8px;
+}
+
+.all-article-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.all-article-body {
+  padding: 80px;
+}
+
+.all-article-container {
+  display: flex;
+  flex-direction: column;
+  background: #d9d9d9;
+  border-radius: 18px;
+  padding: 28px 44px;
+  width: 288px;
+  height: 346px;
+  overflow: hidden;
+}
+
+.all-article-description {
+  font-family: Arapey;
+  height: 52px;
+  padding-bottom: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  white-space: pre-wrap;
+}
+
+.all-article-button {
+  background: #323232;
+  color: white;
+  width: 200px;
+  height: 42px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.Link {
+  text-decoration: none;
+  color: white;
+}
+
+.Link:hover {
+  color: #951914;
+}

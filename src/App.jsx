@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home.jsx";
 import About from "./pages/about/About.jsx";
 import News from "./pages/articles/Articles.jsx";
+import AllArticle from "./pages/articles/Articles.jsx";
 import Article from "./pages/article/Article.jsx";
 import ProductPage from "./pages/product/Product";
 import Register from "./pages/register/Register.jsx";
@@ -22,6 +23,9 @@ function App() {
         </Route>
         <Route path="/article">
           <Route index element={<Article />} />
+        </Route>
+        <Route path="/articles">
+          <Route index element={<AllArticle />} />
         </Route>
         <Route path="/collection">
           <Route index element={<AllCollection />} />

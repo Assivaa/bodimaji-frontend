@@ -43,8 +43,9 @@
 }
 
 .LinkNav {
+  text-decoration: none;
   color: #000;
 }
 .LinkNav:hover {
-   color: #951914;
+  color: #951914;
 }

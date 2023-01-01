@@ -85,9 +85,9 @@
 }
 
 .Link {
-  color: #FFF;
+  text-decoration: none;
+  color: #fff;
 }
 .Link:hover {
-   color: #951914;
-
+  color: #951914;
 }
