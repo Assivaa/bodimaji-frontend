@@ -46,6 +46,11 @@
   text-decoration: none;
   color: #000;
 }
+
+.LinkNav svg {
+  vertical-align: middle;
+}
+
 .LinkNav:hover {
   color: #951914;
 }

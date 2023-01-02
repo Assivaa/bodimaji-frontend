@@ -44,7 +44,7 @@ const Navbar = () => {
             Register/Login
           </NavLink>
         </div>
-        <div>
+        <div className="menu-item">
           <NavLink to="/cart" className="LinkNav">
             <FaShoppingCart /> Cart{" "}
           </NavLink>
