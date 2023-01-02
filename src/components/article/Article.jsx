@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./article.css";
 
 import iconProfile from "../../resources/icons/icon-profile.svg";

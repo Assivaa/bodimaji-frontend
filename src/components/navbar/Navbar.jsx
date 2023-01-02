@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 
@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="logo">
         <img
           src={require("../../resources/icons/bodimaji-logo.png")}
-          alt="image"
+          alt="logo"
         />
       </div>
       <div

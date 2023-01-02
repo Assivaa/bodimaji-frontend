@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./main.css";
 
@@ -14,14 +14,16 @@ const Main = () => {
             Size-inclusive fashion is a human right
           </div>
           <button className="button-explore">
-          <Link to='/collection' className="Link">Explore</Link>
-            <img src={arrowRight} alt="image" />
+            <Link to="/collection" className="Link">
+              Explore
+            </Link>
+            <img src={arrowRight} alt="arrow-right" />
           </button>
         </div>
         <div className="container-item">
           <img
             src={require("../../resources/images/home-alt.jpeg")}
-            alt="image"
+            alt="home-alt"
           />
         </div>
       </div>

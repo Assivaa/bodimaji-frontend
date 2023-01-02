@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./articlesCard.css";
 import { Link } from "react-router-dom";
 
@@ -8,7 +8,7 @@ const Articles = () => {
       <img
         className="all-article-photo"
         src={require("../../resources/images/article-blank-alt.png")}
-        alt="image"
+        alt="blank-article"
       />
       <div className="all-article-head">
         How to pick the best outfit for yourself?

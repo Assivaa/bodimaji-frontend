@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import "./product.css";
 
 const Product = () => {
@@ -7,7 +6,10 @@ const Product = () => {
     <div className="productscreen">
       <div className="product">
         <div className="buy">
-          <img src={require("../../resources/images/hijau.jpg")} alt="image" />
+          <img
+            src={require("../../resources/images/hijau.jpg")}
+            alt="blank-collection"
+          />
           <div className="buy_title">Everyone Shirt in pearl</div>
         </div>
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./footer.css";
 
 import iconMail from "../../resources/icons/icon-mail.svg";
@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="footer-logo">
         <img
           src={require("../../resources/icons/bodimaji-logogram.png")}
-          alt="image"
+          alt="logogram"
         />
       </div>
       <div className="footer-wrapper">
@@ -20,16 +20,16 @@ const Footer = () => {
           <div className="footer-header">Find Us Here</div>
           <div className="footer-menu social">
             <div className="footer-icon">
-              <img src={iconMail} alt="image" />
+              <img src={iconMail} alt="mail" />
             </div>
             <div className="footer-icon">
-              <img src={iconWhatsapp} alt="image" />
+              <img src={iconWhatsapp} alt="whatsapp" />
             </div>
             <div className="footer-icon">
-              <img src={iconInstagram} alt="image" />
+              <img src={iconInstagram} alt="instagram" />
             </div>
             <div className="footer-icon">
-              <img src={iconTiktok} alt="image" />
+              <img src={iconTiktok} alt="tiktok" />
             </div>
           </div>
         </div>
