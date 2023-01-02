@@ -1,18 +1,42 @@
 .registers-registers {
-  /* background: url(../../resources/images/login-register-alt.jpeg); */
-  width: 1440px;
-  height: 1755px;
-  left: 0px;
-  top: 129px;
+  background-image: url('../../resources/images/login-register-alt.jpg'); 
+  width: 1265px;
+  height: 560px;
+  display: container;
+  justify-items: center;
+  display: center;
+  padding: 94px 0px;
+  margin: 0 auto
 }
 
-.registers-container {
-  width: 1280px;
-  height: 807px;
-  left: 80px;
-  top: 186px;
-  background: rgba(230, 229, 226, 0.8);
+.kotak{
+  position: center;
+  margin-bottom: -20px;
+  margin-left: -60px;
+  margin-right: 20px;
+  background-color: rgba(230, 229, 226, 0.5);
+  height: 550px;
+  width:95%;
+  display:center;
+  justify-content:center;
+  margin: 0 auto;
+
 }
+
+.registers-form {
+  width: 1265px;
+  height: 860px;
+  /* background: rgba(230, 229, 226, 0.8); */
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  justify-items: center;
+  gap: 80px 354px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 70px;
+}
+
 
 .registers-createaccount {
   width: 284px;
@@ -70,6 +94,7 @@
 }
 
 .registers-Rectangle2 {
+  margin-top: 30px;
   box-sizing: border-box;
   width: 416px;
   height: 55px;
@@ -162,4 +187,9 @@
   font-size: 24px;
   line-height: 29px;
   color: #0d0d0d;
+}
+
+p{
+  color: #fff;
+  font-weight: bolder;
 }

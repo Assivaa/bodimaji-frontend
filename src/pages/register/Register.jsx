@@ -10,7 +10,8 @@ const Register = () => {
       <Navbar />
       <div>
         <div className="registers-registers">
-          <div className="registers-container">
+            <div className="kotak">
+          <div className="registers-form">
             <div className="registers-createaccount">
               Create Account
               <div className="registers-xxxaspartofbodimaji ">
@@ -36,14 +37,15 @@ const Register = () => {
                 </div>
                 <div>
                   <button className="registers-Rectangle2">
-                    <div className="registers-Register">Register</div>
+                    <div className="registers-Register"><p>Register</p></div>
                   </button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+          </div>
+          </div>
+          </div>
       <BeforeFooter />
       <Footer />
     </>
