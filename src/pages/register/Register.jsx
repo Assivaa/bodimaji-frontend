@@ -37,7 +37,6 @@ const Register = () => {
                   <button className="registers-Rectangle2">
                     <div className="registers-Register">Register</div>
                   </button>
-                  ;
                 </div>
               </div>
             </div>
