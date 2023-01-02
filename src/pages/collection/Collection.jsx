@@ -1,43 +1,54 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+import axios from "axios";
 import Navbar from "../../components/navbar/Navbar";
 import BeforeFooter from "../../components/beforeFooter/BeforeFooter";
 import Footer from "../../components/footer/Footer";
 
 import "./collection.css";
 
+import { rootAPI } from "../home/Home";
+
 const Collection = () => {
+  const path = useLocation().pathname.split("/")[2];
+  const [collection, setCollection] = useState({});
+
+  useEffect(() => {
+    const getCollection = async () => {
+      const { data } = await axios.get(rootAPI + "/collection/" + path);
+      setCollection(data);
+    };
+    getCollection();
+  }, [path]);
+
   return (
     <>
       <Navbar />
       <div className="productscreen">
         <div className="product">
           <div className="buy">
-            <img
-              src={require("../../resources/images/hijau.jpg")}
-              alt="blank-collection"
-            />
-            <div className="buy_title">Everyone Shirt in pearl</div>
+            <img src={collection.imageUrl} alt="blank-collection" />
+            <div className="buy_title">{collection.name}</div>
           </div>
 
           <div className="left_info">
-            <p className="left_name">Product 1</p>
-            <p> Price: Rp200.000</p>
-            <p>
-              {" "}
-              Description: Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Quidem quo quisquam similique doloremque laborum illum
-              sapiente deleniti quaerat quia praesentium architecto ullam quos
-              repellat aliquam minus quas, deserunt blanditiis.
-            </p>
+            <p className="left_name">{collection.name}</p>
+            <p> Price: Rp{collection.price}</p>
+            <p>{collection.description}</p>
           </div>
 
           <div className="productscreen_right">
             <div className="right_info">
               <p>
-                Price: <span>Rp200.000</span>
+                Price: <span>Rp{collection.price}</span>
               </p>
               <p>
-                Status: <span>In Stock </span>
+                Status:
+                {collection.countInStock > 0 ? (
+                  <span> In Stock </span>
+                ) : (
+                  <span> Out of Stock </span>
+                )}
               </p>
               <p>
                 Qty:
