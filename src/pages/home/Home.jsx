@@ -12,11 +12,11 @@ import arrowRight from "../../resources/icons/icon-arrow-right.svg";
 
 import axios from "axios";
 
+const rootAPI = "http://localhost:3001";
+
 const Home = () => {
   const [latestArticles, setLatestArticles] = useState([]);
   const [latestCollections, setLatestCollections] = useState([]);
-
-  const rootAPI = "http://localhost:3001";
 
   const fetchLatestArticles = async () => {
     const { data } = await axios.get(rootAPI + "/article/latest");
@@ -88,4 +88,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export { Home, rootAPI };
