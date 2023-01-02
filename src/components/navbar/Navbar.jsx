@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaShoppingCart } from 'react-icons/fa';
+import { FaShoppingCart } from "react-icons/fa";
 
 import "./navbar.css";
 
@@ -24,12 +24,31 @@ const Navbar = () => {
           justifyContent: "space-around",
         }}
       >
-        <div className="menu-item"><NavLink to='/' className="LinkNav">Home</NavLink></div>
-        <div className="menu-item"><NavLink to='/about' className="LinkNav">About</NavLink></div>
-        <div className="menu-item"><NavLink to='/article' className="LinkNav">Article</NavLink></div>
-        <div className="menu-item"><NavLink to='/register' className="LinkNav">Register/Login</NavLink></div>
-        <div><NavLink to='/cart' className="LinkNav"><FaShoppingCart /> Cart </NavLink></div>
-
+        <div className="menu-item">
+          <NavLink to="/" className="LinkNav">
+            Home
+          </NavLink>
+        </div>
+        <div className="menu-item">
+          <NavLink to="/about" className="LinkNav">
+            About
+          </NavLink>
+        </div>
+        <div className="menu-item">
+          <NavLink to="/articles" className="LinkNav">
+            Article
+          </NavLink>
+        </div>
+        <div className="menu-item">
+          <NavLink to="/register" className="LinkNav">
+            Register/Login
+          </NavLink>
+        </div>
+        <div>
+          <NavLink to="/cart" className="LinkNav">
+            <FaShoppingCart /> Cart{" "}
+          </NavLink>
+        </div>
       </div>
     </div>
   );
