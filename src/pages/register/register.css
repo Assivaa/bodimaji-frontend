@@ -1,0 +1,165 @@
+.registers-registers {
+  /* background: url(../../resources/images/login-register-alt.jpeg); */
+  width: 1440px;
+  height: 1755px;
+  left: 0px;
+  top: 129px;
+}
+
+.registers-container {
+  width: 1280px;
+  height: 807px;
+  left: 80px;
+  top: 186px;
+  background: rgba(230, 229, 226, 0.8);
+}
+
+.registers-createaccount {
+  width: 284px;
+  height: 54px;
+  left: 578px;
+  top: 249px;
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+  /* identical to box height */
+  color: #000000;
+  justify-content: center;
+}
+
+.registers-xxxaspartofbodimaji {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.registers-Rectangle1 {
+  width: 416px;
+  height: 50px;
+  left: 512px;
+  top: 366px;
+  background: #e6e5e2;
+  border: 1px solid #951914;
+  border-radius: 8px;
+}
+
+.registers-checkbox {
+  width: 18px;
+  height: 18px;
+  left: 562px;
+  top: 660px;
+}
+
+.registers-term {
+  width: 187px;
+  height: 15px;
+  left: 596px;
+  top: 660px;
+  font-family: "Arapey";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.registers-Rectangle2 {
+  box-sizing: border-box;
+  width: 416px;
+  height: 55px;
+  left: 512px;
+  top: 703px;
+  background: #272727;
+  border: 1px solid #272727;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+}
+
+.registers-register {
+  /* Register */
+  width: 106px;
+  height: 31px;
+  left: 667px;
+  top: 715px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fcfcfc;
+}
+
+.registers-signupwith {
+  /* or sign up with */
+  width: 120px;
+  height: 22px;
+  left: 660px;
+  top: 782px;
+  font-family: "Arapey";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.registers-googleicon {
+  /* logos:google-icon */
+  width: 24px;
+  height: 24px;
+  left: 697px;
+  top: 818px;
+}
+
+.registers-facebookicon {
+  /* logos:facebook */
+  width: 24px;
+  height: 24px;
+  left: 744px;
+  top: 818px;
+}
+
+.registers-alreadyhaveaccount {
+  width: 202px;
+  height: 22px;
+  left: 620px;
+  top: 866px;
+  font-family: "Arapey";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.registers-Rectangle3 {
+  box-sizing: border-box;
+  width: 416px;
+  height: 55px;
+  left: 521px;
+  top: 912px;
+  background: #e6e5e2;
+  border: 1px solid #951914;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+}
+
+.registers-login {
+  width: 71px;
+  height: 31px;
+  left: 685px;
+  top: 924px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0d0d0d;
+}

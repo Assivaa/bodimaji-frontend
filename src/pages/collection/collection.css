@@ -1,0 +1,129 @@
+.productscreen {
+  max-width: 1600px;
+  margin: 3rem auto;
+  display: flex;
+}
+
+.product {
+  display: flex;
+  flex: 9;
+}
+
+.buy {
+  display: flex;
+  flex-flow: column;
+  width: 300px;
+  height: 300px;
+  margin-left: 140px;
+  margin-bottom: 20px;
+  box-shadow: 0px 6px 5px rgba(5, 5, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 0px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 30px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.buy_title {
+  margin-top: 5px;
+  font-size: 17px;
+  font-weight: bolder;
+  margin-left: 54px;
+  margin-bottom: 170px;
+}
+.productscreen {
+  max-width: 1300px;
+  margin: 1rem auto;
+  display: flex;
+}
+
+.productscreen_left {
+  display: flex;
+  flex: 0.8;
+}
+
+.left_info {
+  margin: 2rem;
+  flex: 0.7;
+  background: #f3f6f3;
+  height: fit-content;
+  font-size: 0.9rem;
+}
+
+.left_name {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
+.left_info > p,
+.right_info > p {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.left_info > p:last-child,
+.right_info > p:last-child {
+  border: none;
+}
+
+.productscreen_right {
+  flex: 0.2;
+  margin: 2rem;
+  background: #f3f6f3;
+  height: fit-content;
+  font-size: 0.9rem;
+}
+
+/* checkout */
+.right_info {
+  width: 250px;
+  margin: 1rem;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.right_info p {
+  padding: 1rem;
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.right_info p > button {
+  grid-column: 1/-1;
+  padding: 10px 16px;
+  background: #171717;
+  color: #fff;
+  font-weight: bolder;
+  border: 1px solid #171717;
+  cursor: pointer;
+}
+
+.right_info select {
+  padding: 10px 16px;
+}
+
+@media (max-width: 960px) {
+  .productscreen {
+    flex-direction: column;
+  }
+
+  .productscreen_left {
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .left_info {
+    flex: 1;
+  }
+
+  .productscreen_right {
+    flex: 1;
+    padding: 1rem;
+  }
+
+  .right_info {
+    width: 100%;
+    margin: 0;
+  }
+}
