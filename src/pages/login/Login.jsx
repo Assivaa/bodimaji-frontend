@@ -19,6 +19,16 @@ const Register = () => {
                 <div className="logins-Rectangle1">
                   <input type="password" placeholder="Password"></input>
                 </div>
+                <div>
+                  <button className="logins-Rectangle2">
+                    <div className="logins-login-button">Login</div>
+                  </button>
+                </div>
+                <div>
+                  <button className="logins-Rectangle3">
+                    <div className="logins-Register-button">Register</div>
+                  </button>
+                </div>
             </div>
           </div>
         </div>
