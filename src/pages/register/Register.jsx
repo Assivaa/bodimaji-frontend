@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 import BeforeFooter from "../../components/beforeFooter/BeforeFooter";
 import Footer from "../../components/footer/Footer";
+import "./register.css";
 
 const Register = () => {
   return (
@@ -37,7 +38,6 @@ const Register = () => {
                   <button className="registers-Rectangle2">
                     <div className="registers-Register">Register</div>
                   </button>
-                  ;
                 </div>
               </div>
             </div>

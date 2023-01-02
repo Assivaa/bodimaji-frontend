@@ -1,0 +1,64 @@
+.logins-logins {
+    /* background: url(../../resources/images/login-register-alt.jpeg); */
+    width: 1440px;
+    height: 1755px;
+    left: 0px;
+    top: 129px;
+  }
+  
+  .logins-container {
+    width: 1280px;
+    height: 807px;
+    left: 80px;
+    top: 186px;
+    background: rgba(230, 229, 226, 0.8);
+  }
+  
+  .logins-login {
+    width: 284px;
+    height: 54px;
+    left: 578px;
+    top: 249px;
+    font-family: "Abril Fatface";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+    /* identical to box height */
+    color: #000000;
+    justify-content: center;
+  }
+
+  .logins-Rectangle1 {
+    width: 416px;
+    height: 50px;
+    left: 512px;
+    top: 366px;
+    background: #e6e5e2;
+    border: 1px solid #951914;
+    border-radius: 8px;
+  }
+  
+  .logins-Rectangle2 {
+    box-sizing: border-box;
+    width: 416px;
+    height: 55px;
+    left: 512px;
+    top: 703px;
+    background: #272727;
+    border: 1px solid #272727;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+  }
+
+  .logins-Rectangle3 {
+    box-sizing: border-box;
+    width: 416px;
+    height: 55px;
+    left: 521px;
+    top: 912px;
+    background: #e6e5e2;
+    border: 1px solid #951914;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+  }

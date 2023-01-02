@@ -5,6 +5,7 @@ import AllArticle from "./pages/articles/Articles.jsx";
 import Article from "./pages/article/Article.jsx";
 import Collection from "./pages/collection/Collection";
 import Register from "./pages/register/Register.jsx";
+import Login from "./pages/login/Login.jsx";
 import AllCollection from "./pages/collections/Collections.jsx";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="register" element={<Register />} />
+            <Route path="login" element={<Login />} />
             <Route path="about" element={<About />} />
             <Route path="article">
               <Route path="" element={<AllArticle />} />
