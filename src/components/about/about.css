@@ -1,179 +1,171 @@
-       .articles {
-       font-family: "Inter";
-       font-style: normal;
-       font-weight: 400;
-       padding: 88px 0px 0px 80px;
-     }
-     
-     .containerabout {
-       display: grid;
-       grid-template-columns: repeat(2, minmax(0, 1fr));
-     }
-     
-     .container-aboutpage img {
-       object-fit: cover;
-       width: 630px;
-       height: 501px;
-     }
+.articles {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  padding: 88px 0px 0px 80px;
+}
 
-     .rectangle {
-       line-height: 86px;
-       width: 900px;
-       height: 218px;
-       background: #D9D9D9;
+.containerabout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
 
-       font-family: 'Cinzel';
-       font-style: normal;
-       font-weight: 400;
-       font-size: 20px;
-       line-height: 27px;
-       color: #000000;
-       padding-top: 125px;
-       padding-left: 25px;
-       margin-bottom: 50px;
-      
-     }
+.container-aboutpage img {
+  object-fit: cover;
+  width: 630px;
+  height: 501px;
+}
 
-     //title
-      .title4{
-       font-family: 'Abril Fatface';
-       font-style: normal;
-       font-weight: 400;
-       font-size: 40px;
-       line-height: 54px;
-       padding-bottom: 50px;
-     }
+.rectangle {
+  line-height: 86px;
+  width: 900px;
+  height: 218px;
+  background: #d9d9d9;
 
-     .title2{
-       font-family: 'Abril Fatface';
-       font-style: normal;
-       font-weight: 400;
-       font-size: 40px;
-       line-height: 54px;
-       padding-top: 20px;
-       margin-left: 350px;
-       margin-top: -360px;
-       margin-bottom: 500px;
-     }
-     .title3{
-       font-family: 'Abril Fatface';
-       font-style: normal;
-       font-weight: 400;
-       font-size: 40px;
-       line-height: 54px;
-       padding-top: 20px;
-     }
-     .title4{
-       font-family: 'Abril Fatface';
-       font-style: normal;
-       font-weight: 400;
-       font-size: 40px;
-       line-height: 54px;
-       padding-top: 20px;
-       margin-top: -450px;
-       margin-bottom: 500px;
-     }
-     
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+  padding-top: 125px;
+  padding-left: 25px;
+  margin-bottom: 50px;
+}
 
+.title4 {
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+  padding-bottom: 50px;
+}
 
-     //desc
-     .desc1{
-       font-family: 'Arapey';
-       font-style: normal;
-       font-weight: 400;
-       font-size: 24px;
-       line-height: 26px;
-       padding-bottom: 30px;
-       padding-top: 20px;
-     }
-     .desc2{
-       font-family: 'Arapey';
-       font-style: normal;
-       font-weight: 400;
-       font-size: 24px;
-       line-height: 26px;
-       padding-bottom: 30px;
-       padding-top: 20px;
-     }
-     .desc3{
-       font-family: 'Arapey';
-       font-style: normal;
-       font-weight: 400;
-       font-size: 24px;
-       line-height: 26px;
-       padding-bottom: 10px;
-       padding-top: 20px;
+.title2 {
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+  padding-top: 20px;
+  margin-left: 350px;
+  margin-top: -360px;
+  margin-bottom: 500px;
+}
+.title3 {
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+  padding-top: 20px;
+}
+.title4 {
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+  padding-top: 20px;
+  margin-top: -450px;
+  margin-bottom: 500px;
+}
 
-       margin-right: -310px;
-       margin-left: 350px;
-       margin-top: -500px;
-       margin-bottom: 480px;
-     }
-     .desc4{
-       font-family: 'Arapey';
-       font-style: normal;
-       font-weight: 400;
-       font-size: 24px;
-       line-height: 26px;
-       padding-bottom: 30px;
-       padding-top: 20px;
-       margin-top: -500px;
-       margin-bottom: 300px;
-     }
-     
+.desc1 {
+  font-family: "Arapey";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+.desc2 {
+  font-family: "Arapey";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+.desc3 {
+  font-family: "Arapey";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  padding-bottom: 10px;
+  padding-top: 20px;
 
-     //gambar
-     .image{
-       left: 80px;
-       top: 948px;
-       padding-top: 60px;
-     }
-     .image img{
-       padding-top: 30px;
-       width: 310px;
-       height: 323px;
-     }
-     
-     .banner{
-       left: 80px;
-       top: 1497px;
-       padding-top: 60px;
-     }
-     .banner img{
-       margin-bottom: 50px;
-       margin-top: -800px;
-       padding-top: 30px;
-       width: 1080px;
-       height: 323px;
-     }
+  margin-right: -310px;
+  margin-left: 350px;
+  margin-top: -500px;
+  margin-bottom: 480px;
+}
+.desc4 {
+  font-family: "Arapey";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  margin-top: -500px;
+  margin-bottom: 300px;
+}
 
-     //button
-     .join-interact {
-       width: 314px;
-       height: 80px;
-       left: 80px;
-       top: 1860px;
-     }
-     .join-button {
-       font-weight: 700;
-       font-size: 32px;
-       font-style: normal;
-       font-weight: 700;
-       line-height: 39px;
-       color: #fcfcfc;
-       text-align: center;
-       text-decoration: none;
-       padding: 16px 38px;
-       background: #272727;
-       border: 1px solid #272727;
-       box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
-       border-radius: 10px;
-     }
-    
-      .join-button img {
-       padding-left: 37px;
-       object-fit: cover;
-       width: 28px;
-       height: 18px;
-       margin-top: -400px;
-     }
+.image {
+  left: 80px;
+  top: 948px;
+  padding-top: 60px;
+}
+.image img {
+  padding-top: 30px;
+  width: 310px;
+  height: 323px;
+}
+
+.banner {
+  left: 80px;
+  top: 1497px;
+  padding-top: 60px;
+}
+.banner img {
+  margin-bottom: 50px;
+  margin-top: -800px;
+  padding-top: 30px;
+  width: 1080px;
+  height: 323px;
+}
+
+.join-interact {
+  width: 314px;
+  height: 80px;
+  left: 80px;
+  top: 1860px;
+}
+.join-button {
+  font-weight: 700;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 39px;
+  color: #fcfcfc;
+  text-align: center;
+  text-decoration: none;
+  padding: 16px 38px;
+  background: #272727;
+  border: 1px solid #272727;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+}
+
+.join-button img {
+  padding-left: 37px;
+  object-fit: cover;
+  width: 28px;
+  height: 18px;
+  margin-top: -400px;
+}
