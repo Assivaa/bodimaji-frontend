@@ -3,6 +3,8 @@ import Navbar from "../../components/navbar/Navbar";
 import BeforeFooter from "../../components/beforeFooter/BeforeFooter";
 import Footer from "../../components/footer/Footer";
 
+import "./articles.css";
+
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { rootAPI } from "../home/Home";
@@ -28,21 +30,15 @@ const AllArticle = () => {
             <div className="all-article-container" key={article._id}>
               <img
                 className="all-article-photo"
-                src={require("../../resources/images/article-blank-alt.png")}
+                src={article.imageUrl}
                 alt="blank-article"
               />
-              <div className="all-article-head">
-                How to pick the best outfit for yourself?
-              </div>
+              <div className="all-article-head">{article.title}</div>
               <div className="all-article-description">
-                Pellentesque habitant morbi tristique senectus et netus et
-                malesuada fames ac turpis egestas. Vestibulum tortor quam,
-                feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
-                libero sit amet quam egestas semper. Aenean ultricies mi vitae
-                est. Mauris placerat eleifend leo
+                {article.description}
               </div>
               <button className="all-article-button">
-                <Link to="/article" className="Link">
+                <Link to={`/article/${article._id}`} className="Link">
                   Read More
                 </Link>
               </button>
