@@ -1,29 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./discover.css";
 
-const DiscoverCollection = () => {
+const DiscoverCollection = ({ collection }) => {
   return (
-    <div className="carousel-image">
-      <img
-        src={require("../../resources/images/collection-alt.jpg")}
-        alt="article-alt"
-      />
-    </div>
+    <Link to={`/collection/${collection._id}`} className="carousel-image">
+      <img src={collection.imageUrl} alt="article-alt" />
+    </Link>
   );
 };
 
-const DiscoverArticle = () => {
+const DiscoverArticle = ({ article }) => {
   return (
-    <div className="carousel-image">
-      <img
-        src={require("../../resources/images/article-alt.jpeg")}
-        alt="article-alt"
-      />
+    <Link to={`/article/${article._id}`} className="carousel-image">
+      <img src={article.imageUrl} alt="article-alt" />
       <div className="discover-article">
-        <div className="article-header">Tips Pemula</div>
-        <div className="article-content">Apa itu Size-Inclusive fashion?</div>
+        <div className="article-header">{article.title}</div>
+        <div className="article-content">{article.description}</div>
       </div>
-    </div>
+    </Link>
   );
 };
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import Main from "../../components/main/Main";
 import BeforeFooter from "../../components/beforeFooter/BeforeFooter";
@@ -10,7 +10,29 @@ import Footer from "../../components/footer/Footer";
 import { Link } from "react-router-dom";
 import arrowRight from "../../resources/icons/icon-arrow-right.svg";
 
+import axios from "axios";
+
 const Home = () => {
+  const [latestArticles, setLatestArticles] = useState([]);
+  const [latestCollections, setLatestCollections] = useState([]);
+
+  const rootAPI = "http://localhost:3001";
+
+  const fetchLatestArticles = async () => {
+    const { data } = await axios.get(rootAPI + "/article/latest");
+    setLatestArticles(data);
+  };
+
+  const fetchLatestCollections = async () => {
+    const { data } = await axios.get(rootAPI + "/collection/latest");
+    setLatestCollections(data);
+  };
+
+  useEffect(() => {
+    fetchLatestArticles();
+    fetchLatestCollections();
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -35,9 +57,9 @@ const Home = () => {
           </div>
         </div>
         <div className="discover-carousel">
-          <DiscoverCollection />
-          <DiscoverCollection />
-          <DiscoverCollection />
+          {latestCollections.map((collection) => (
+            <DiscoverCollection collection={collection} key={collection._id} />
+          ))}
         </div>
 
         <div className="discover-container">
@@ -48,15 +70,17 @@ const Home = () => {
           <div></div>
           <div className="discover-interact">
             <button className="discover-button">
-              Read
+              <Link to="/articles" className="Link">
+                Read
+              </Link>
               <img src={arrowRight} alt="arrow-right" />
             </button>
           </div>
         </div>
         <div className="discover-carousel">
-          <DiscoverArticle />
-          <DiscoverArticle />
-          <DiscoverArticle />
+          {latestArticles.map((article) => (
+            <DiscoverArticle article={article} key={article._id} />
+          ))}
         </div>
       </div>
       <Footer />
