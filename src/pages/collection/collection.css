@@ -89,7 +89,7 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.right_info p > button {
+.collection-button-active {
   grid-column: 1/-1;
   padding: 10px 16px;
   background: #171717;
@@ -97,6 +97,16 @@
   font-weight: bolder;
   border: 1px solid #171717;
   cursor: pointer;
+}
+
+.collection-button-disabled {
+  grid-column: 1/-1;
+  padding: 10px 16px;
+  background: rgba(239, 239, 239, 0.3);
+  color: rgba(16, 16, 16, 0.3);
+  font-weight: bolder;
+  border: 1px solid rgba(118, 118, 118, 0.3);
+  cursor: default;
 }
 
 .right_info select {

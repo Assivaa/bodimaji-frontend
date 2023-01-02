@@ -45,7 +45,7 @@ const Collection = () => {
               <p>
                 Status:
                 {collection.countInStock > 0 ? (
-                  <span> In Stock </span>
+                  <span> In Stock ({collection.countInStock}) </span>
                 ) : (
                   <span> Out of Stock </span>
                 )}
@@ -69,7 +69,15 @@ const Collection = () => {
                 </select>
               </p>
               <p>
-                <button>Add to cart</button>
+                {collection.countInStock > 0 ? (
+                  <button className="collection-button-active">
+                    Add to cart
+                  </button>
+                ) : (
+                  <button className="collection-button-disabled" disabled>
+                    Add to cart
+                  </button>
+                )}
               </p>
             </div>
           </div>
