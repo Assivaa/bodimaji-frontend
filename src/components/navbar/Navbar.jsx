@@ -1,10 +1,19 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import { React, useState } from "react";
+import { Link } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 
 import "./navbar.css";
+import iconClose from "../../resources/icons/icon-close.svg";
 
 const Navbar = () => {
+  const [isActive, setIsActive] = useState(false);
+  const handleClick = () => {
+    // 👇️ toggle
+    setIsActive((current) => !current);
+
+    // 👇️ or set to true
+    // setIsActive(true);
+  };
   return (
     <div
       className="navbar"
@@ -25,29 +34,64 @@ const Navbar = () => {
         }}
       >
         <div className="menu-item">
-          <NavLink to="/" className="LinkNav">
+          <Link to="/" className="LinkNav">
             Home
-          </NavLink>
+          </Link>
         </div>
         <div className="menu-item">
-          <NavLink to="/about" className="LinkNav">
+          <Link to="/about" className="LinkNav">
             About
-          </NavLink>
+          </Link>
         </div>
         <div className="menu-item">
-          <NavLink to="/articles" className="LinkNav">
+          <Link to="/article" className="LinkNav">
             Article
-          </NavLink>
+          </Link>
         </div>
         <div className="menu-item">
-          <NavLink to="/register" className="LinkNav">
+          <Link to="/register" className="LinkNav">
             Register/Login
-          </NavLink>
+          </Link>
         </div>
-        <div className="menu-item">
-          <NavLink to="/cart" className="LinkNav">
-            <FaShoppingCart /> Cart{" "}
-          </NavLink>
+        <div className="menu-item" onClick={handleClick}>
+          <FaShoppingCart /> Cart{" "}
+        </div>
+      </div>
+      <div
+        id="mySidenav"
+        class="sidenav"
+        style={{
+          width: isActive ? "455px" : "0",
+        }}
+      >
+        <div className="menu-cart-wrapper">
+          <img
+            src={iconClose}
+            alt="icon-close"
+            className="menu-cart-close"
+            onClick={handleClick}
+          />
+          <div className="menu-cart-title">Cart</div>
+          <div className="menu-cart-remove">Remove</div>
+          <div className="menu-cart-container">
+            <div className="menu-cart-name">Everyone Shirt in Pearl</div>
+            <div className="menu-cart-color">Beige</div>
+            <div className="menu-cart-quantity">
+              <div className="menu-cart-price">Rp214.000</div>
+              <div className="menu-cart-input">
+                <input type="number" min="1" />
+              </div>
+            </div>
+          </div>
+          <div className="menu-cart-subtotal">
+            <div className="menu-cart-subtotal-title">Subtotal:</div>
+            <div className="menu-cart-price">Rp214.000</div>
+          </div>
+          <div className="menu-cart-checkout">
+            <Link to="/cart">
+              <button>Checkout</button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
