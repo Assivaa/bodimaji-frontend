@@ -2,7 +2,7 @@ import { React, useEffect, useState, useRef } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import BeforeFooter from "../../components/beforeFooter/BeforeFooter";
 import Footer from "../../components/footer/Footer";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import axios from "axios";
 import "./register.css";
 import { rootAPI } from "../home/Home";
@@ -10,23 +10,30 @@ import { rootAPI } from "../home/Home";
 import socialGoogle from "../../resources/icons/icon-google.svg";
 import socialFacebook from "../../resources/icons/icon-facebook.svg";
 
-const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
-const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 const REGISTER_URL = rootAPI + "/register";
-
 const Register = () => {
-  const userRef = useRef();
+  const usernameRef = useRef();
+  const fullnameRef = useRef();
+  const emailRef = useRef();
   const errRef = useRef();
 
-  const [user, setUser] = useState("");
+  const [fullname, setFullname] = useState("");
+  const [validFullName, setValidFullName] = useState(false);
+  const [fullnameFocus, setFullnameFocus] = useState(false);
+
+  const [username, setUsername] = useState("");
   const [validName, setValidName] = useState(false);
-  const [userFocus, setUserFocus] = useState(false);
+  const [usernameFocus, setUsernameFocus] = useState(false);
 
-  const [pwd, setPwd] = useState("");
-  const [validPwd, setValidPwd] = useState(false);
-  const [pwdFocus, setPwdFocus] = useState(false);
+  const [email, setEmail] = useState("");
+  const [validEmail, setValidEmail] = useState(false);
+  const [emailFocus, setEmailFocus] = useState(false);
 
-  const [matchPwd, setMatchPwd] = useState("");
+  const [password, setPassword] = useState("");
+  const [validPassword, setValidPassword] = useState(false);
+  const [passwordFocus, setPasswordFocus] = useState(false);
+
+  const [matchPassword, setMatchPassword] = useState("");
   const [validMatch, setValidMatch] = useState(false);
   const [matchFocus, setMatchFocus] = useState(false);
 
@@ -34,58 +41,36 @@ const Register = () => {
   const [success, setSuccess] = useState(false);
 
   useEffect(() => {
-    userRef.current.focus();
+    usernameRef.current.focus();
   }, []);
 
   useEffect(() => {
-    setValidName(USER_REGEX.test(user));
-  }, [user]);
+    setValidName(username);
+    setValidFullName(fullname);
+    setValidEmail(email);
+  }, [username, fullname, email]);
 
   useEffect(() => {
-    setValidPwd(PWD_REGEX.test(pwd));
-    setValidMatch(pwd === matchPwd);
-  }, [pwd, matchPwd]);
+    setValidPassword(password);
+    setValidMatch(password === matchPassword);
+  }, [password, matchPassword]);
 
   useEffect(() => {
     setErrMsg("");
-  }, [user, pwd, matchPwd]);
+  }, [username, fullname, email, password, matchPassword]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // if button enabled with JS hack
-    const v1 = USER_REGEX.test(user);
-    const v2 = PWD_REGEX.test(pwd);
-    if (!v1 || !v2) {
-      setErrMsg("Invalid Entry");
-      return;
-    }
     try {
-      const response = await axios.post(
-        REGISTER_URL,
-        JSON.stringify({ user, pwd }),
-        {
-          headers: { "Content-Type": "application/json" },
-          withCredentials: true,
-        }
-      );
-      console.log(response?.data);
-      console.log(response?.accessToken);
-      console.log(JSON.stringify(response));
-      setSuccess(true);
-      //clear state and controlled inputs
-      //need value attrib on inputs for this
-      setUser("");
-      setPwd("");
-      setMatchPwd("");
-    } catch (err) {
-      if (!err?.response) {
-        setErrMsg("No Server Response");
-      } else if (err.response?.status === 409) {
-        setErrMsg("Username Taken");
-      } else {
-        setErrMsg("Registration Failed");
-      }
-      errRef.current.focus();
+      const res = await axios.post(rootAPI + "/register", {
+        fullname,
+        email,
+        username,
+        password,
+      });
+      <Navigate to="/login" />;
+    } catch (error) {
+      console.log(error);
     }
   };
 
@@ -112,21 +97,21 @@ const Register = () => {
               <form onSubmit={handleSubmit} className="register-form-input">
                 <input
                   type="text"
-                  placeholder="Fullname"
+                  placeholder="Username"
                   id="username"
-                  ref={userRef}
+                  ref={usernameRef}
                   autoComplete="off"
-                  onChange={(e) => setUser(e.target.value)}
-                  value={user}
+                  onChange={(e) => setUsername(e.target.value)}
+                  value={username}
                   required
                   aria-invalid={validName ? "false" : "true"}
                   aria-describedby="uidnote"
-                  onFocus={() => setUserFocus(true)}
+                  onFocus={() => setUsernameFocus(true)}
                 ></input>
                 <p
                   id="uidnote"
                   className={
-                    userFocus && user && !validName
+                    usernameFocus && username && !validName
                       ? "instructions"
                       : "offscreen"
                   }
@@ -134,23 +119,41 @@ const Register = () => {
                   4 to 24 characters. Must begin with a letter. Letters,
                   numbers, underscores, hyphens allowed.
                 </p>
-                <input type="text" placeholder="Fullname"></input>
-                <input type="text" placeholder="Email Address"></input>
+                <input
+                  type="text"
+                  placeholder="Fullname"
+                  ref={fullnameRef}
+                  autoComplete="off"
+                  onChange={(e) => setFullname(e.target.value)}
+                  value={fullname}
+                  required
+                ></input>
+                <input
+                  type="text"
+                  placeholder="Email Address"
+                  ref={emailRef}
+                  autoComplete="off"
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
+                  required
+                ></input>
                 <input
                   type="password"
                   placeholder="Password"
                   id="password"
-                  onChange={(e) => setPwd(e.target.value)}
-                  value={pwd}
+                  onChange={(e) => setPassword(e.target.value)}
+                  value={password}
                   required
-                  aria-invalid={validPwd ? "false" : "true"}
-                  aria-describedby="pwdnote"
-                  onFocus={() => setPwdFocus(true)}
+                  aria-invalid={validPassword ? "false" : "true"}
+                  aria-describedby="passwordnote"
+                  onFocus={() => setPasswordFocus(true)}
                 ></input>
                 <p
-                  id="pwdnote"
+                  id="passwordnote"
                   className={
-                    pwdFocus && !validPwd ? "instructions" : "offscreen"
+                    passwordFocus && !validPassword
+                      ? "instructions"
+                      : "offscreen"
                   }
                 >
                   8 to 24 characters. Must include uppercase and lowercase
@@ -164,9 +167,9 @@ const Register = () => {
                 <input
                   type="password"
                   placeholder="Confirm Password"
-                  id="confirm_pwd"
-                  onChange={(e) => setMatchPwd(e.target.value)}
-                  value={matchPwd}
+                  id="confirm_password"
+                  onChange={(e) => setMatchPassword(e.target.value)}
+                  value={matchPassword}
                   required
                   aria-invalid={validMatch ? "false" : "true"}
                   aria-describedby="confirmnote"
@@ -188,7 +191,7 @@ const Register = () => {
                   <button
                     className="register-form link register"
                     disabled={
-                      !validName || !validPwd || !validMatch ? true : false
+                      !validName || !validPassword || !validMatch ? true : false
                     }
                   >
                     <span>Register</span>
