@@ -6,7 +6,6 @@
 
 .register-wrapper {
   background-color: rgba(230, 229, 226, 0.5);
-  height: 807px;
   margin: 0 auto;
   padding: 63px 498px;
 }
@@ -89,6 +88,10 @@
   background: #951914;
 }
 
+.register-form-button.register span {
+  pointer-events: none;
+}
+
 .register-form-button.login button {
   font-family: "Inter";
   font-weight: 700;
@@ -124,9 +127,45 @@
 .register-form.link.login {
   text-decoration: none;
   color: black;
+  min-height: 100%;
+  display: inline-block;
 }
 
 .register-form.link.register {
   text-decoration: none;
   color: #fcfcfc;
+  min-height: 100%;
+  display: inline-block;
+}
+
+.register-form-input > p {
+  text-align: start;
+  margin: 0;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
 }
