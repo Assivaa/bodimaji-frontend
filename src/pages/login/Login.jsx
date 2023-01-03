@@ -1,14 +1,37 @@
-import React from "react";
+import { React, useState } from "react";
+import { useDispatch } from "react-redux";
 import Navbar from "../../components/navbar/Navbar";
 import BeforeFooter from "../../components/beforeFooter/BeforeFooter";
 import Footer from "../../components/footer/Footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { loginFailure, loginStart, loginSuccess } from "../../redux/userSlice";
+import axios from "axios";
 import "./login.css";
-
+import { rootAPI } from "../home/Home";
 import socialGoogle from "../../resources/icons/icon-google.svg";
 import socialFacebook from "../../resources/icons/icon-facebook.svg";
 
 const Login = () => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const handleLogin = async (event) => {
+    event.preventDefault();
+    dispatch(loginStart());
+    try {
+      const { data } = await axios.post(rootAPI + "/login", {
+        username,
+        password,
+      });
+      dispatch(loginSuccess(data));
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+      dispatch(loginFailure());
+    }
+  };
   return (
     <>
       <Navbar />
@@ -17,17 +40,28 @@ const Login = () => {
           <div className="login-form-header">
             <span>Login</span>
           </div>
-          <div className="login-form-input">
-            <input type="text" placeholder="Email Address"></input>
-            <input type="password" placeholder="Password"></input>
-          </div>
-          <div className="login-form-button login">
-            <Link to="/" className="login-form link login">
-              <button>
-                <span>Login</span>
-              </button>
-            </Link>
-          </div>
+          <form>
+            <div className="login-form-input">
+              <input
+                type="text"
+                placeholder="Email Address"
+                onChange={(e) => setUsername(e.target.value)}
+                required
+              ></input>
+              <input
+                type="password"
+                placeholder="Password"
+                onChange={(e) => setPassword(e.target.value)}
+              ></input>
+            </div>
+            <div className="login-form-button login">
+              <a className="login-form link login">
+                <button onClick={handleLogin}>
+                  <span>Login</span>
+                </button>
+              </a>
+            </div>
+          </form>
           <div className="login-form-term">
             <span>Forgot Password?</span>
           </div>

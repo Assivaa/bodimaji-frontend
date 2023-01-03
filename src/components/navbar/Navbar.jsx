@@ -1,19 +1,29 @@
 import { React, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import { FaShoppingCart } from "react-icons/fa";
+import { logout } from "../../redux/userSlice";
 
 import "./navbar.css";
 import iconClose from "../../resources/icons/icon-close.svg";
+import { current } from "@reduxjs/toolkit";
 
 const Navbar = () => {
+  const { currentUser } = useSelector((state) => state.user);
   const [isActive, setIsActive] = useState(false);
   const handleClick = () => {
-    // 👇️ toggle
     setIsActive((current) => !current);
-
-    // 👇️ or set to true
-    // setIsActive(true);
   };
+
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const handleLogout = async (e) => {
+    e.preventDefault();
+    dispatch(logout());
+    navigate("/");
+  };
+
   return (
     <div
       className="navbar"
@@ -55,6 +65,11 @@ const Navbar = () => {
         </div>
         <div className="menu-item" onClick={handleClick}>
           <FaShoppingCart /> Cart{" "}
+        </div>
+        <div className="menu-item">
+          <Link to={`/profile`} className="LinkNav">
+            {currentUser.username}
+          </Link>
         </div>
       </div>
       <div
