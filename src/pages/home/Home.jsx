@@ -93,7 +93,7 @@ const Home = () => {
           <div></div>
           <div className="discover-interact">
             <button className="discover-button">
-              <Link to="/articles" className="Link">
+              <Link to="/article" className="Link">
                 Read
               </Link>
               <img src={arrowRight} alt="arrow-right" />
