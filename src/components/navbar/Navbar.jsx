@@ -65,7 +65,7 @@ const Navbar = () => {
             </div>
             <div className="menu-item">
               <Link to={`/profile`} className="LinkNav">
-                {currentUser.username}
+               My Profile
               </Link>
             </div>
             <div className="menu-item">
@@ -77,10 +77,11 @@ const Navbar = () => {
         ) : (
           <div className="menu-item">
             <Link to="/register" className="LinkNav">
-              Register/Login
+              Register
             </Link>
           </div>
         )}
+      
       </div>
       <div
         id="mySidenav"
