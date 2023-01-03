@@ -72,10 +72,15 @@ const Navbar = () => {
         ) : (
           <div className="menu-item">
             <Link to="/register" className="LinkNav">
-              Register/Login
+              Register
             </Link>
           </div>
         )}
+        <div className="menu-item">
+          <Link to="/profile" className="LinkNav">
+            My Profile
+          </Link>
+        </div>
       </div>
       <div
         id="mySidenav"
