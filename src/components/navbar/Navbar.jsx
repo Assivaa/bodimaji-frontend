@@ -60,19 +60,20 @@ const Navbar = () => {
 
         {currentUser ? (
           <>
-            <div className="menu-item" onClick={handleClick}>
-              <FaShoppingCart /> Cart{" "}
-            </div>
             <div className="menu-item">
               <Link to={`/profile`} className="LinkNav">
                My Profile
               </Link>
+            </div>
+            <div className="menu-item" onClick={handleClick}>
+              <FaShoppingCart /> Cart{" "}
             </div>
             <div className="menu-item">
               <button className="menu-item-logout" onClick={handleLogout}>
                 <span>Logout</span>
               </button>
             </div>
+            
           </>
         ) : (
           <div className="menu-item">
