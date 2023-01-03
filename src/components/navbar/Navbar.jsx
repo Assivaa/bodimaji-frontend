@@ -6,7 +6,6 @@ import { logout } from "../../redux/userSlice";
 
 import "./navbar.css";
 import iconClose from "../../resources/icons/icon-close.svg";
-import { current } from "@reduxjs/toolkit";
 
 const Navbar = () => {
   const { currentUser } = useSelector((state) => state.user);
@@ -58,19 +57,25 @@ const Navbar = () => {
             Article
           </Link>
         </div>
-        <div className="menu-item">
-          <Link to="/register" className="LinkNav">
-            Register/Login
-          </Link>
-        </div>
-        <div className="menu-item" onClick={handleClick}>
-          <FaShoppingCart /> Cart{" "}
-        </div>
-        <div className="menu-item">
-          <Link to={`/profile`} className="LinkNav">
-            {currentUser.username}
-          </Link>
-        </div>
+
+        {currentUser ? (
+          <>
+            <div className="menu-item" onClick={handleClick}>
+              <FaShoppingCart /> Cart{" "}
+            </div>
+            <div className="menu-item">
+              <Link to={`/profile`} className="LinkNav">
+                {currentUser.username}
+              </Link>
+            </div>
+          </>
+        ) : (
+          <div className="menu-item">
+            <Link to="/register" className="LinkNav">
+              Register/Login
+            </Link>
+          </div>
+        )}
       </div>
       <div
         id="mySidenav"
