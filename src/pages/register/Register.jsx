@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 import BeforeFooter from "../../components/beforeFooter/BeforeFooter";
 import Footer from "../../components/footer/Footer";
+import { Link } from "react-router-dom";
 import "./register.css";
 
 import socialGoogle from "../../resources/icons/icon-google.svg";
@@ -26,10 +27,12 @@ const Register = () => {
           <div className="register-form-term">
             <input type="checkbox" /> <span>I agree to Terms & Conditions</span>
           </div>
-          <div className="register-form-button">
-            <button className="register-button">
-              <span>Register</span>
-            </button>
+          <div className="register-form-button register">
+            <Link to="/login" className="register-form link register">
+              <button>
+                <span>Register</span>
+              </button>
+            </Link>
           </div>
           <div className="register-social-container">
             <div className="register-social-header">or sign up with</div>
@@ -39,10 +42,12 @@ const Register = () => {
             </div>
             <span>Already have an account?</span>
           </div>
-          <div className="register-form-button">
-            <button className="login-button">
-              <span>Login</span>
-            </button>
+          <div className="register-form-button login">
+            <Link to="/login" className="register-form link login">
+              <button>
+                <span>Login</span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -59,7 +59,7 @@ const Navbar = () => {
       </div>
       <div
         id="mySidenav"
-        class="sidenav"
+        className="sidenav"
         style={{
           width: isActive ? "455px" : "0",
         }}
