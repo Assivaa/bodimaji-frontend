@@ -8,6 +8,9 @@ import Register from "./pages/register/Register.jsx";
 import Login from "./pages/login/Login.jsx";
 import AllCollection from "./pages/collections/Collections.jsx";
 import ScrollToTop from "./components/ScrollToTop";
+import Profile from "./pages/profile/Profile";
+import Dashboard from "./pages/admin/dashboard.jsx";
+
 
 function App() {
   return (
@@ -27,6 +30,8 @@ function App() {
               <Route path="" element={<AllCollection />} />
               <Route path=":id" element={<Collection />} />
             </Route>
+            <Route path="profile" element={<Profile />} />
+            <Route path="admin" element={<Dashboard />} />
           </Route>
         </Routes>
       </ScrollToTop>
