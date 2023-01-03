@@ -2,7 +2,7 @@ import { React, useEffect, useState, useRef } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import BeforeFooter from "../../components/beforeFooter/BeforeFooter";
 import Footer from "../../components/footer/Footer";
-import { Link, Navigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./register.css";
 import { rootAPI } from "../home/Home";
@@ -59,6 +59,7 @@ const Register = () => {
     setErrMsg("");
   }, [username, fullname, email, password, matchPassword]);
 
+  const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -68,9 +69,9 @@ const Register = () => {
         username,
         password,
       });
-      <Navigate to="/login" />;
+      navigate("/login");
     } catch (error) {
-      console.log(error);
+      navigate("/login");
     }
   };
 
