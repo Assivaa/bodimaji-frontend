@@ -39,12 +39,19 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  cursor: pointer;
+}
+
+.menu-item-logout {
+  border-radius: 10px;
+  padding: 8px 24px;
+  background: #951914;
+  color: white;
 }
 
 .LinkNav {
   text-decoration: none;
   color: #000;
+  cursor: pointer;
 }
 
 .LinkNav svg {

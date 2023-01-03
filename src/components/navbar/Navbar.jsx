@@ -68,6 +68,11 @@ const Navbar = () => {
                 {currentUser.username}
               </Link>
             </div>
+            <div className="menu-item">
+              <button className="menu-item-logout" onClick={handleLogout}>
+                <span>Logout</span>
+              </button>
+            </div>
           </>
         ) : (
           <div className="menu-item">
