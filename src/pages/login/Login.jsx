@@ -44,7 +44,7 @@ const Login = () => {
             <div className="login-form-input">
               <input
                 type="text"
-                placeholder="Email Address"
+                placeholder="Username"
                 onChange={(e) => setUsername(e.target.value)}
                 required
               ></input>
