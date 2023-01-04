@@ -59,7 +59,7 @@
 .register-form-term {
   font-family: "Arapey";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 15px;
   color: #000000;
   text-align: center;
@@ -102,6 +102,7 @@
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
   border-radius: 10px;
   padding: 12px 164px;
+  margin-left: -80px;
 }
 
 .register-social-container {
@@ -136,6 +137,7 @@
   color: #fcfcfc;
   min-height: 100%;
   display: inline-block;
+  margin-left: -80px;
 }
 
 .register-form-input > p {
