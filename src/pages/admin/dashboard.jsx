@@ -1,8 +1,8 @@
 import React from "react";
 import NavbarAdmin from "../../components/navbaradmin/Admin";
-import BeforeFooter from "../../components/beforeFooter/BeforeFooter";
-import Footer from "../../components/footer/Footer";
-
+import { FaProductHunt } from "react-icons/fa";
+import { FaBook } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
 import "./dashboard.css";
 
 const Dashboard = () => {
@@ -14,22 +14,27 @@ const Dashboard = () => {
       {/* sidebar */}
         <ul class="side-menu top">
 			<li class="active">
-				<a href="#">
-					<i class='bx bxs-dashboard' ></i>
-					<span class="text">Dashboard</span>
+        <a href="#">
+              <FaHome /> <span class="text">Dashboard</span>
 				</a>
 			</li>
 			<li>
-				<a href="#">
-					<i class='bx bxs-shopping-bag-alt' ></i>
-					<span class="text">Article</span>
-				</a>
+				
+        <div className="dash-article">
+        <a href="#">
+              <FaBook /> <span class="text">Article</span>
+        </a>
+        </div>
+					
+			
 			</li>
 			<li>
-				<a href="#">
-					<i class='bx bxs-doughnut-chart' ></i>
-					<span class="text">Collection</span>
+				
+        <div className="dash-collection">
+        <a href="#">
+        <FaProductHunt /> <span class="text">Collection</span>
 				</a>
+        </div>
 			</li>
 			
 		  </ul>
@@ -82,8 +87,7 @@ const Dashboard = () => {
 
 
       </div>
-      <BeforeFooter />
-      <Footer />
+
     </>
   );
 };
