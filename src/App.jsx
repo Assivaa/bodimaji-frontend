@@ -9,7 +9,7 @@ import Login from "./pages/login/Login.jsx";
 import AllCollection from "./pages/collections/Collections.jsx";
 import ScrollToTop from "./components/ScrollToTop";
 import Profile from "./pages/profile/Profile";
-import Dashboard from "./pages/admin/dashboard.jsx";
+import Dashboard from "./pages/admin/Dashboard";
 
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
               <Route path=":id" element={<Collection />} />
             </Route>
             <Route path="profile" element={<Profile />} />
-            <Route path="admin" element={<Dashboard />} />
+            <Route path="Dashboard" element={<Dashboard />} />
           </Route>
         </Routes>
       </ScrollToTop>

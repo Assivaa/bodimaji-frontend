@@ -9,8 +9,14 @@ const Dashboard = () => {
   return (
     <>
       <Navbar />
-      <div className="articles">
-        
+      <div className="dashboardpage">
+        <div className="dashboard2">
+       
+         tes
+      </div>
+
+
+
       </div>
       <BeforeFooter />
       <Footer />
