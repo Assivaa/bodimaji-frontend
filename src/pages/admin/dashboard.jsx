@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../../components/navbar/Navbar";
+import NavbarAdmin from "../../components/navbaradmin/Admin";
 import BeforeFooter from "../../components/beforeFooter/BeforeFooter";
 import Footer from "../../components/footer/Footer";
 
@@ -8,9 +8,8 @@ import "./dashboard.css";
 const Dashboard = () => {
   return (
     <>
-      <Navbar />
+      <NavbarAdmin />
       <div className="dashboardpage">
-        <div className="dashboard2">
 
       {/* sidebar */}
         <ul class="side-menu top">
@@ -23,28 +22,17 @@ const Dashboard = () => {
 			<li>
 				<a href="#">
 					<i class='bx bxs-shopping-bag-alt' ></i>
-					<span class="text">My Store</span>
+					<span class="text">Article</span>
 				</a>
 			</li>
 			<li>
 				<a href="#">
 					<i class='bx bxs-doughnut-chart' ></i>
-					<span class="text">Analytics</span>
+					<span class="text">Collection</span>
 				</a>
 			</li>
-			<li>
-				<a href="#">
-					<i class='bx bxs-message-dots' ></i>
-					<span class="text">Message</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class='bx bxs-group' ></i>
-					<span class="text">Team</span>
-				</a>
-			</li>
-		</ul>
+			
+		  </ul>
     
     {/* setting and logout */}
     <ul class="side-menu">
@@ -85,30 +73,11 @@ const Dashboard = () => {
             </a>
           </nav>
 
-          <main>
-            <div className="head-title">
-              <div className="left">
-                  <h1>Dashboard</h1>
-                      <ul class="breadcrumb">
-                            <li>
-                                  <a href="#">Dashboard</a>
-                            </li>
-                                <li><i class='bx bx-chevron-right' ></i></li>
-                            <li>
-                                  <a class="active" href="#">Home</a>
-                            </li>
-                      </ul>
-
-              </div>
-            </div>
-          </main>
+          
 
     </div>
     
          
-
-        
-      </div>
 
 
 
