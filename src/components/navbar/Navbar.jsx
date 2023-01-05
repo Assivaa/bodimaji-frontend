@@ -58,31 +58,12 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {currentUser ? (
-          <>
-            <div className="menu-item">
-              <Link to={`/profile`} className="LinkNav">
-               My Profile
-              </Link>
-            </div>
-            <div className="menu-item" onClick={handleClick}>
-              <FaShoppingCart /> Cart{" "}
-            </div>
-            <div className="menu-item">
-              <button className="menu-item-logout" onClick={handleLogout}>
-                <span>Logout</span>
-              </button>
-            </div>
-            
-          </>
-        ) : (
-          <div className="menu-item">
-            <Link to="/register" className="LinkNav">
-              Register
-            </Link>
-          </div>
-        )}
-      
+        <div className="menu-item">
+          <Link to="/register" className="LinkNav">
+            Register
+          </Link>
+        </div>
+
       </div>
       <div
         id="mySidenav"
