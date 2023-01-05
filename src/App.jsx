@@ -10,6 +10,9 @@ import AllProduct from "./pages/productList/ProductList.jsx";
 import ScrollToTop from "./components/ScrollToTop";
 import Profile from "./pages/profile/Profile";
 import Dashboard from "./pages/admin/dashboard";
+import DashboardMenu from "./pages/dashboardmenu/DashboardMenu.jsx";
+import DashboardArticle from "./pages/dashboardarticle/DashboardArticle.jsx";
+import DashboardProduct from "./pages/dashboardproduct/DashboardProduct.jsx";
 
 function App() {
   return (
@@ -30,7 +33,11 @@ function App() {
               <Route path=":id" element={<Product />} />
             </Route>
             <Route path="profile" element={<Profile />} />
+            {/* dashboard admin */}
             <Route path="dashboard" element={<Dashboard />} />
+            <Route path="DashboardMenu" element={<DashboardMenu />} />
+            <Route path="DashboardArticle" element={<DashboardArticle />} />
+            <Route path="DashboardProduct" element={<DashboardProduct/>} />
           </Route>
         </Routes>
       </ScrollToTop>

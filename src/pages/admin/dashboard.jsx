@@ -4,6 +4,7 @@ import { FaProductHunt } from "react-icons/fa";
 import { FaBook } from "react-icons/fa";
 import { FaHome } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import "./dashboard.css";
 
 const Dashboard = () => {
@@ -16,23 +17,23 @@ const Dashboard = () => {
         <ul class="side-menu top">
           <li class="active">
             <div className="dash-home">
-              <a href="#">
-                <FaHome /> <span class="text">Dashboard</span>
-              </a>
+            <Link to="/dashboardMenu" className="LinkNav">
+                   <FaHome /> <span class="text">Dashboard</span>
+            </Link>
             </div>
           </li>
           <li>
             <div className="dash-article">
-              <a href="#">
+            <Link to="/dashboardArticle" className="LinkNav">
                 <FaBook /> <span class="text">Article</span>
-              </a>
+             </Link>
             </div>
           </li>
           <li>
             <div className="dash-product">
-              <a href="#">
+            <Link to="/dashboardProduct" className="LinkNav">
                 <FaProductHunt /> <span class="text">Product</span>
-              </a>
+            </Link>
             </div>
           </li>
         </ul>
