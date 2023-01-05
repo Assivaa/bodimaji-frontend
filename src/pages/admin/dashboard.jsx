@@ -11,60 +11,52 @@ const Dashboard = () => {
     <>
       <NavbarAdmin />
       <div className="dashboardpage-white">
-      <div className="dashboardpage"></div>
-      {/* sidebar */}
+        <div className="dashboardpage"></div>
+        {/* sidebar */}
         <ul class="side-menu top">
-			<li class="active">
+          <li class="active">
+            <div className="dash-home">
+              <a href="#">
+                <FaHome /> <span class="text">Dashboard</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div className="dash-article">
+              <a href="#">
+                <FaBook /> <span class="text">Article</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div className="dash-product">
+              <a href="#">
+                <FaProductHunt /> <span class="text">Product</span>
+              </a>
+            </div>
+          </li>
+        </ul>
 
-      <div className="dash-home">
-        <a href="#">
-              <FaHome /> <span class="text">Dashboard</span>
-				</a>
-        </div>
-			</li>
-			<li>
-				
-        <div className="dash-article">
-        <a href="#">
-              <FaBook /> <span class="text">Article</span>
-        </a>
-        </div>
-					
-			
-			</li>
-			<li>
-				
-        <div className="dash-collection">
-        <a href="#">
-        <FaProductHunt /> <span class="text">Collection</span>
-				</a>
-        </div>
-			</li>
-			
-		  </ul>
-    
-    {/* setting and logout */}
-    <ul class="side-menu">
-			<li>
-      <div className="setting">
-				<a href="#">
-					<FaArrowRight /><span class="text">Settings</span>
-				</a>
-        </div>
-			</li>
-			<li>
-      <div className="keluar">
-				<a href="#" class="logout">
-        <FaArrowRight /><span class="text">Logout</span>
-				</a>
+        {/* setting and logout */}
+        <ul class="side-menu">
+          <li>
+            <div className="setting">
+              <a href="#">
+                <FaArrowRight />
+                <span class="text">Settings</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div className="keluar">
+              <a href="#" class="logout">
+                <FaArrowRight />
+                <span class="text">Logout</span>
+              </a>
+            </div>
+          </li>
+        </ul>
       </div>
-			</li>
-		</ul>
-  
-         
-
-       </div>
-
     </>
   );
 };

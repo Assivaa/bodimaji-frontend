@@ -1,11 +1,10 @@
-.dashboardpage{
-       margin-top: 10px;
-	padding: 0;
-	box-sizing: border-box;
-
+.dashboardpage {
+  margin-top: 10px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.dashboardpage-white{
+.dashboardpage-white {
   margin: 0;
   background-color: white;
   width: 300px;
@@ -14,29 +13,29 @@
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-	list-style: none;
+  list-style: none;
 }
 
-.dash-article{
-     padding: 10px;
+.dash-article {
+  padding: 10px;
 }
 
-.dash-home{
-       padding: 10px;
+.dash-home {
+  padding: 10px;
 }
 
-.dash-collection{
-       padding: 10px;
+.dash-product {
+  padding: 10px;
 }
 
-.setting{
-       padding: 10px;
+.setting {
+  padding: 10px;
 }
 
-.keluar{
-       padding: 10px;
+.keluar {
+  padding: 10px;
 }

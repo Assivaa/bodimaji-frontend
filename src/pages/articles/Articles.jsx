@@ -30,7 +30,7 @@ const AllArticle = () => {
             <div className="all-article-container" key={article._id}>
               <img
                 className="all-article-photo"
-                src={article.imageUrl}
+                src={article.img}
                 alt="blank-article"
               />
               <div className="all-article-head">{article.title}</div>

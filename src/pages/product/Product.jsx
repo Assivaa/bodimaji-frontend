@@ -5,47 +5,47 @@ import Navbar from "../../components/navbar/Navbar";
 import BeforeFooter from "../../components/beforeFooter/BeforeFooter";
 import Footer from "../../components/footer/Footer";
 
-import "./collection.css";
+import "./product.css";
 
 import { rootAPI } from "../home/Home";
 
-const Collection = () => {
+const Product = () => {
   const path = useLocation().pathname.split("/")[2];
-  const [collection, setCollection] = useState({});
+  const [product, setProduct] = useState({});
 
   useEffect(() => {
-    const getCollection = async () => {
-      const { data } = await axios.get(rootAPI + "/collection/" + path);
-      setCollection(data);
+    const getProduct = async () => {
+      const { data } = await axios.get(rootAPI + "/product/" + path);
+      setProduct(data);
     };
-    getCollection();
+    getProduct();
   }, [path]);
 
   return (
     <>
       <Navbar />
-      <div className="productscreen">
+      <div className="productListcreen">
         <div className="product">
           <div className="buy">
-            <img src={collection.imageUrl} alt="blank-collection" />
-            <div className="buy_title">{collection.name}</div>
+            <img src={product.img} alt="blank-product" />
+            <div className="buy_title">{product.name}</div>
           </div>
 
           <div className="left_info">
-            <p className="left_name">{collection.name}</p>
-            <p> Price: Rp{collection.price}</p>
-            <p>{collection.description}</p>
+            <p className="left_name">{product.name}</p>
+            <p> Price: Rp{product.price}</p>
+            <p>{product.description}</p>
           </div>
 
-          <div className="productscreen_right">
+          <div className="productListcreen_right">
             <div className="right_info">
               <p>
-                Price: <span>Rp{collection.price}</span>
+                Price: <span>Rp{product.price}</span>
               </p>
               <p>
                 Status:
-                {collection.countInStock > 0 ? (
-                  <span> In Stock ({collection.countInStock}) </span>
+                {product.countInStock > 0 ? (
+                  <span> In Stock ({product.countInStock}) </span>
                 ) : (
                   <span> Out of Stock </span>
                 )}
@@ -69,12 +69,10 @@ const Collection = () => {
                 </select>
               </p>
               <p>
-                {collection.countInStock > 0 ? (
-                  <button className="collection-button-active">
-                    Add to cart
-                  </button>
+                {product.countInStock > 0 ? (
+                  <button className="product-button-active">Add to cart</button>
                 ) : (
-                  <button className="collection-button-disabled" disabled>
+                  <button className="product-button-disabled" disabled>
                     Add to cart
                   </button>
                 )}
@@ -89,4 +87,4 @@ const Collection = () => {
   );
 };
 
-export default Collection;
+export default Product;

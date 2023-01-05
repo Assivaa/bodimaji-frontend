@@ -8,11 +8,11 @@
   padding-bottom: 54px;
 }
 
-.collection-body {
+.product-body {
   padding: 94px 80px;
 }
 
-.collection-wrapper {
+.product-wrapper {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   justify-items: center;

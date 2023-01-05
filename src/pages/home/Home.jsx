@@ -12,21 +12,21 @@ const rootAPI = "http://localhost:3001";
 
 const Home = () => {
   const [latestArticles, setLatestArticles] = useState([]);
-  const [latestCollections, setLatestCollections] = useState([]);
+  const [latestProducts, setLatestProducts] = useState([]);
 
   const fetchLatestArticles = async () => {
     const { data } = await axios.get(rootAPI + "/article/latest");
     setLatestArticles(data);
   };
 
-  const fetchLatestCollections = async () => {
-    const { data } = await axios.get(rootAPI + "/collection/latest");
-    setLatestCollections(data);
+  const fetchLatestProducts = async () => {
+    const { data } = await axios.get(rootAPI + "/product/latest");
+    setLatestProducts(data);
   };
 
   useEffect(() => {
     fetchLatestArticles();
-    fetchLatestCollections();
+    fetchLatestProducts();
   }, []);
 
   return (
@@ -40,7 +40,7 @@ const Home = () => {
               Size-inclusive fashion is a human right
             </div>
             <button className="button-explore">
-              <Link to="/collection" className="Link">
+              <Link to="/product" className="Link">
                 Explore
               </Link>
               <img src={arrowRight} alt="arrow-right" />
@@ -58,15 +58,15 @@ const Home = () => {
       <div className="discover">
         <div className="discover-container">
           <div className="discover-caption">
-            <div className="discover-header">Discover our collection</div>
+            <div className="discover-header">Discover our product</div>
             <div className="discover-description">
-              Our latest collection, curated for you
+              Our latest product, curated for you
             </div>
           </div>
           <div></div>
           <div className="discover-interact">
             <button className="discover-button">
-              <Link to="/collection" className="Link">
+              <Link to="/product" className="Link">
                 See All
               </Link>
               <img src={arrowRight} alt="article-alt" />
@@ -74,13 +74,13 @@ const Home = () => {
           </div>
         </div>
         <div className="discover-carousel">
-          {latestCollections.map((collection) => (
+          {latestProducts.map((product) => (
             <Link
-              to={`/collection/${collection._id}`}
+              to={`/product/${product._id}`}
               className="carousel-image"
-              key={collection._id}
+              key={product._id}
             >
-              <img src={collection.imageUrl} alt="article-alt" />
+              <img src={product.img} alt="article-alt" />
             </Link>
           ))}
         </div>
@@ -107,7 +107,7 @@ const Home = () => {
               className="carousel-image"
               key={article._id}
             >
-              <img src={article.imageUrl} alt="article-alt" />
+              <img src={article.img} alt="article-alt" />
               <div className="discover-article">
                 <div className="article-header">{article.title}</div>
                 <div className="article-content">{article.description}</div>
