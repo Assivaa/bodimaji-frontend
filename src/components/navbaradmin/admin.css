@@ -13,28 +13,38 @@
        width: 950px;
        height: 25px;
        margin-left: 80px;
+       margin-top: -40px;
 }
 
-.gambarolshop{
+.NavbarAdmin-title{
        display: flex;
        font-weight: 700;
        font-size: 32px;
        line-height: 39px;
-       margin-top: -40px;
+       margin-top: -30px;
        margin-left: 40px;
        color: white;
 }
 
-.gambarolshop img{
+/* .gambarolshop img{
        width: 202.54px;
        height: 45px;
        cursor: pointer;
        margin-top: -60px;
-}
+} */
 
 .admin{
        color: black;
        font-family: Abril Fatface;
        margin-left: 17px;
-       margin-top: -60px;
+       margin-top: -90px;
+}
+
+.iconProfile img{
+       width: 140px;
+       height: 140px;
+       margin-top: -45px;
+       margin-left: 40px;
+       margin-bottom: -55px;
+
 }

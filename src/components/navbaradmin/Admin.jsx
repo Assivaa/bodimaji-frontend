@@ -6,19 +6,23 @@ import "./admin.css";
 const NavbarAdmin = () => {
   
   return (
+    <div className="navbaradmin-wrap">
     <div
       className="navbaradmin"
       style={{ display: "flex", justifyContent: "space-between" }}
     >
-      <div className="gambarolshop">
-        {/* <img
-          src={require("../../resources/icons/bodimaji-logo.png")}
-          alt="logo"
-        />  */}
+      <div className="NavbarAdmin-title">
         Bodimaji
       </div>
-     
+      
             
+    </div>
+    <div className="iconProfile">
+    <img
+      src={require("../../resources/images/profile.png")}
+      alt="home-alt"
+    />
+    </div>    
     </div>
   );
 };
