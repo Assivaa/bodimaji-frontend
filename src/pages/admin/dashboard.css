@@ -9,7 +9,7 @@
   margin-top: -200px;
   background-color: #87cefa;
   width: 250px;
-  height: 920px;
+  height: 940px;
 }
 
 a {
@@ -40,6 +40,7 @@ li {
 
 .keluar {
   padding: 10px;
+  padding-bottom: 30px;
 }
 
 .sideright {
@@ -47,7 +48,7 @@ li {
   margin-left: 290px;
   background-color: white;
   width: 950px;
-  height: 750px;
+  height: 740px;
 }
 
 .welcomingwords {
@@ -56,4 +57,6 @@ li {
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
+  margin-top: 20px;
+  padding-top: 30px;
 }

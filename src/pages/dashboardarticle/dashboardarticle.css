@@ -1,0 +1,21 @@
+.formarticle-input {
+       display: flex;
+       flex-direction: column;
+       gap: 42px;
+       text-align: center;
+}
+     
+.formarticle-input input {
+       background: #e6e5e2;
+       border: 1px solid #951914;
+       border-radius: 8px;
+       font-family: "Arapey";
+       font-weight: 400;
+       font-size: 20px;
+       line-height: 22px;
+       color: #000000;
+       padding: 14px 14px;
+       width: 500px;
+       margin-top: 40px;
+       margin-left: 50px;
+}
