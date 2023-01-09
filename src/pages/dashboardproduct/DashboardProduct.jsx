@@ -11,11 +11,15 @@ const DashboardProduct = () => {
           <p><input type="text" placeholder="Search product here" /></p>
           <button type="button">Search</button>
         </div>
+
         <div className="admin-add-product-button">
           <button type="button">Add Product</button>
         </div>
         <div className="admin-delete-product-button">
           <button type="button">Delete Product</button>
+        </div>
+        <div className="admin-update-product-button">
+          <button type="button">Update Product</button>
         </div>
       </div >
     </>
