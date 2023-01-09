@@ -1,21 +1,35 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../redux/userSlice";
 import { FaShoppingCart } from "react-icons/fa";
+import axios from "axios";
 
 import iconClose from "../resources/icons/icon-close.svg";
 import styled from "styled-components";
+import { rootAPI } from "../pages/home/Home";
 
 const Slider = () => {
   const { currentUser } = useSelector((state) => state.user);
   const [isActive, setIsActive] = useState(false);
+  const [cart, setCart] = useState([]);
+  const [total, totalCart] = useState({});
   const handleClick = () => {
     setIsActive((current) => !current);
   };
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
+  const getCart = async () => {
+    const { data } = await axios.get(rootAPI + `/cart/${currentUser._id}`);
+    setCart(data.products);
+    totalCart(data);
+  };
+
+  useEffect(() => {
+    getCart();
+  }, []);
 
   const handleLogout = async (e) => {
     e.preventDefault();
@@ -162,18 +176,27 @@ const Slider = () => {
               <Title> {currentUser.fullname}'s Cart</Title>
               <Remove>Remove</Remove>
               <Container>
-                <div className="menu-cart-name">Everyone Shirt in Pearl</div>
-                <ColorSelector>Beige</ColorSelector>
-                <Quantity>
-                  <Price>Rp214.000</Price>
-                  <Input>
-                    <input type="number" min="1" />
-                  </Input>
-                </Quantity>
+                {cart.map((cartItem) => (
+                  <div>
+                    <div className="menu-cart-name">{cartItem.name}</div>
+                    {/* <ColorSelector>Beige</ColorSelector> */}
+                    <Quantity>
+                      <Price>Rp{cartItem.price}</Price>
+                      <Input>
+                        <input
+                          type="number"
+                          min="1"
+                          defaultValue={cartItem.quantity}
+                          key={cartItem.productId}
+                        />
+                      </Input>
+                    </Quantity>
+                  </div>
+                ))}
               </Container>
               <Subtotal>
                 <div className="menu-cart-subtotal-title">Subtotal:</div>
-                <ProductPrice>Rp214.000</ProductPrice>
+                <ProductPrice>Rp{total.bill}</ProductPrice>
               </Subtotal>
               <Checkout>
                 <Link to="/cart">
