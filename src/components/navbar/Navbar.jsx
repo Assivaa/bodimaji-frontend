@@ -45,7 +45,7 @@ const Navbar = () => {
             Article
           </Link>
         </div>
-        {currentUser.role === "admin" ? (
+        {currentUser && currentUser.role === "admin" ? (
           <div className="menu-item">
             <Link to="/dashboard" className="LinkNav" target="_blank">
               Dashboard
