@@ -47,3 +47,10 @@ li {
   width: 950px;
   height: 620px;
 }
+
+.welcomingwords {
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+}
