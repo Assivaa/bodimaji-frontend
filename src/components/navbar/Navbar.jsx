@@ -47,7 +47,7 @@ const Navbar = () => {
         </div>
         {currentUser && currentUser.role === "admin" ? (
           <div className="menu-item">
-            <Link to="/dashboard" className="LinkNav" target="_blank">
+            <Link to="/admin/dashboard" className="LinkNav" target="_blank">
               Dashboard
             </Link>
           </div>
