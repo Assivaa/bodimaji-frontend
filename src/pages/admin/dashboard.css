@@ -6,10 +6,10 @@
 
 .dashboardpage-white {
   margin: 0;
-  background-color: white;
-  width: 300px;
-  height: 620px;
-  border-radius: 60px 1px 0;
+  margin-top: -200px;
+  background-color: #87cefa;
+  width: 250px;
+  height: 920px;
 }
 
 a {
@@ -26,6 +26,8 @@ li {
 
 .dash-home {
   padding: 10px;
+  padding-top: 180px;
+  margin-top: 60px;
 }
 
 .dash-product {
@@ -41,11 +43,11 @@ li {
 }
 
 .sideright {
-  margin-top: -620px;
-  margin-left: 310px;
+  margin-top: -750px;
+  margin-left: 290px;
   background-color: white;
   width: 950px;
-  height: 620px;
+  height: 750px;
 }
 
 .welcomingwords {
