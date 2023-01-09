@@ -19,7 +19,7 @@ const Product = () => {
 
   useEffect(() => {
     const getProduct = async () => {
-      const { data } = await axios.get(rootAPI + "/product/" + path);
+      const { data } = await axios.get(rootAPI + `/product/${path}`);
       setProduct(data);
     };
     getProduct();
