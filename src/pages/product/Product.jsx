@@ -4,14 +4,18 @@ import axios from "axios";
 import Navbar from "../../components/navbar/Navbar";
 import BeforeFooter from "../../components/beforeFooter/BeforeFooter";
 import Footer from "../../components/footer/Footer";
+import { useDispatch, useSelector } from "react-redux";
 
 import "./product.css";
 
 import { rootAPI } from "../home/Home";
 
 const Product = () => {
+  const { currentUser } = useSelector((state) => state.user);
+
   const path = useLocation().pathname.split("/")[2];
   const [product, setProduct] = useState({});
+  const [quantity, setQuantity] = useState("1");
 
   useEffect(() => {
     const getProduct = async () => {
@@ -20,6 +24,21 @@ const Product = () => {
     };
     getProduct();
   }, [path]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(quantity);
+    try {
+      const resp = await axios.post(rootAPI + `/cart/`, {
+        _id: currentUser._id,
+        productId: product._id,
+        quantity: quantity,
+      });
+      alert("added to cart");
+    } catch (error) {
+      console.log(error.response);
+    }
+  };
 
   return (
     <>
@@ -52,25 +71,24 @@ const Product = () => {
               </p>
               <p>
                 Qty:
-                <select>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-              </p>
-              <p>
-                Color:
-                <select>
-                  <option value="red">red</option>
-                  <option value="blue">blue</option>
-                  <option value="sage">sage</option>
-                  <option value="yellow">yellow</option>
+                <select
+                  name={quantity}
+                  onChange={(e) => setQuantity(e.target.value)}
+                >
+                  <option value={1}>1</option>
+                  <option value={2}>2</option>
+                  <option value={3}>3</option>
+                  <option value={4}>4</option>
                 </select>
               </p>
               <p>
                 {product.countInStock > 0 ? (
-                  <button className="product-button-active">Add to cart</button>
+                  <button
+                    className="product-button-active"
+                    onClick={handleSubmit}
+                  >
+                    Add to cart
+                  </button>
                 ) : (
                   <button className="product-button-disabled" disabled>
                     Add to cart
