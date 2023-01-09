@@ -33,11 +33,12 @@ function App() {
               <Route path=":id" element={<Product />} />
             </Route>
             <Route path="profile" element={<Profile />} />
-            {/* dashboard admin */}
+          </Route>
+          <Route path="/admin">
             <Route path="dashboard" element={<Dashboard />} />
-            <Route path="DashboardMenu" element={<DashboardMenu />} />
-            <Route path="DashboardArticle" element={<DashboardArticle />} />
-            <Route path="DashboardProduct" element={<DashboardProduct/>} />
+            <Route path="menu" element={<DashboardMenu />} />
+            <Route path="article" element={<DashboardArticle />} />
+            <Route path="product" element={<DashboardProduct />} />
           </Route>
         </Routes>
       </ScrollToTop>
