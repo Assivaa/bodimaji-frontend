@@ -11,10 +11,11 @@ const NavbarAdmin = () => {
       style={{ display: "flex", justifyContent: "space-between" }}
     >
       <div className="gambarolshop">
-        <img
+        {/* <img
           src={require("../../resources/icons/bodimaji-logo.png")}
           alt="logo"
-        /> 
+        />  */}
+        Bodimaji
       </div>
      
             

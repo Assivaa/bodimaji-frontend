@@ -8,7 +8,7 @@
        font-family: "Inter";
        font-style: normal;
        font-weight: 400;
-       background-color: #ffffff;
+       background-color: #221177;
        box-shadow: 20px;
        width: 950px;
        height: 25px;
@@ -20,6 +20,9 @@
        font-weight: 700;
        font-size: 32px;
        line-height: 39px;
+       margin-top: -40px;
+       margin-left: 40px;
+       color: white;
 }
 
 .gambarolshop img{
