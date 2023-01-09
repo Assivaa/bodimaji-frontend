@@ -6,27 +6,18 @@ const DashboardProduct = () => {
     <>
       <Dashboard />
       <div className="sideright">
-        <div>
-          <img
-            src={require("../../resources/images/dress1.jpeg")}
-            alt="dress1"
-          /></div>
-        <div>
-          <img
-            src={require("../../resources/images/dress2.jpg")}
-            alt="dress2"
-          /></div>
-        <div>
-          <img
-            src={require("../../resources/images/dress3.jpg")}
-            alt="dress3"
-          /></div>
-        <div>
-          <img
-            src={require("../../resources/images/dress4.jpg")}
-            alt="dress4"
-          /></div>
-      </div>
+        <div className="admin-search-product-box-container">
+          <h1>Search box</h1>
+          <p><input type="text" placeholder="Search product here" /></p>
+          <button type="button">Search</button>
+        </div>
+        <div className="admin-add-product-button">
+          <button type="button">Add Product</button>
+        </div>
+        <div className="admin-delete-product-button">
+          <button type="button">Delete Product</button>
+        </div>
+      </div >
     </>
   );
 };
