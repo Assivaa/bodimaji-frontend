@@ -14,7 +14,7 @@ const NavbarAdmin = () => {
         <img
           src={require("../../resources/icons/bodimaji-logo.png")}
           alt="logo"
-        /> <div className="admin">Admin</div>
+        /> 
       </div>
      
             

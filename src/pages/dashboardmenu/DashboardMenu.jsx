@@ -9,7 +9,7 @@ const DashboardMenu = () => {
         <div className="welcomingwords">
           Welcome, Admin! What would you do today?
         </div>
-        <div>
+        <div className="undraw">
             <img
               src={require("../../resources/images/undraw_Setup_analytics_re_foim.png")}
               alt="undraw_Setup_analytics_re_foim"
