@@ -49,6 +49,7 @@ li {
 }
 
 .welcomingwords {
+  text-align: center;
   font-family: "Abril Fatface";
   font-style: normal;
   font-weight: 400;
