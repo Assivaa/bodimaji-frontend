@@ -35,10 +35,10 @@ function App() {
             <Route path="profile" element={<Profile />} />
           </Route>
           <Route path="/admin">
-            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="dashboard" element={<Dashboard />} />      
             <Route path="menu" element={<DashboardMenu />} />
             <Route path="article" element={<DashboardArticle />} />
-            <Route path="product" element={<DashboardProduct />} />
+            <Route path="product" element={<DashboardProduct />} />           
           </Route>
         </Routes>
       </ScrollToTop>

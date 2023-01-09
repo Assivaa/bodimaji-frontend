@@ -5,6 +5,9 @@ const DashboardMenu = () => {
        return (
          <>
           <Dashboard />
+          <div className="sideright">
+      dashboard
+        </div>
          </>
        );
 };

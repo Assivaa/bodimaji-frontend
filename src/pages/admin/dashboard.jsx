@@ -17,21 +17,21 @@ const Dashboard = () => {
         <ul class="side-menu top">
           <li class="active">
             <div className="dash-home">
-            <Link to="/dashboardMenu" className="LinkNav">
+            <Link to="/admin/menu" className="LinkNav">
                    <FaHome /> <span class="text">Dashboard</span>
             </Link>
             </div>
           </li>
           <li>
             <div className="dash-article">
-            <Link to="/dashboardArticle" className="LinkNav">
+            <Link to="/admin/article" className="LinkNav">
                 <FaBook /> <span class="text">Article</span>
              </Link>
             </div>
           </li>
           <li>
             <div className="dash-product">
-            <Link to="/dashboardProduct" className="LinkNav">
+            <Link to="/admin/product" className="LinkNav">
                 <FaProductHunt /> <span class="text">Product</span>
             </Link>
             </div>
@@ -58,6 +58,10 @@ const Dashboard = () => {
           </li>
         </ul>
       </div>
+      <div className="sideright">
+        
+      </div>
+      
     </>
   );
 };

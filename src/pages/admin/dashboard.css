@@ -9,7 +9,7 @@
   background-color: white;
   width: 300px;
   height: 620px;
-  border-radius: 60px 1px;
+  border-radius: 60px 1px 0;
 }
 
 a {
@@ -38,4 +38,12 @@ li {
 
 .keluar {
   padding: 10px;
+}
+
+.sideright {
+  margin-top: -620px;
+  margin-left: 310px;
+  background-color: white;
+  width: 950px;
+  height: 620px;
 }
