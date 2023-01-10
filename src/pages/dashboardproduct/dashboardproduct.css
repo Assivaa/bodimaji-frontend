@@ -7,3 +7,99 @@
     background-color: #fff;
     padding: 5px;
   }
+
+  .formproduct-input {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    text-align: center;
+}
+  
+.formproduct-input input {
+    background: #ffffff;
+    border: 2px solid #221177;
+    border-radius: 8px;
+    font-family: "Arapey";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000000;
+    padding: 14px 14px;
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.title-product{
+    margin-top: 20px;
+    margin-left: 45px;
+    font-family: "Cinzel";
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.title-product2{
+    margin-top: -35px;
+    margin-bottom: -40px;
+    margin-left: -700px;
+    font-family: "Cinzel";
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.title-product3{
+    margin-top: -35px;
+    margin-bottom: -40px;
+    margin-left: -720px;
+    font-family: "Cinzel";
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.title-product4{
+    margin-top: -35px;
+    margin-bottom: -40px;
+    margin-left: -800px;
+    font-family: "Cinzel";
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.title-product5{
+  margin-top: -35px;
+  margin-bottom: -40px;
+  margin-left: -710px;
+  font-family: "Cinzel";
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.FormButton.Submitproduct {
+    padding: 28px 0px 24px 0px;
+    text-align: center;
+}
+
+.FormButton.Submitproduct button {
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    background: #272727;
+    border: 1px solid #272727;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    color: #fcfcfc;
+    padding: 12px 155px;
+    width: 530px;
+    margin-left: 148px;
+}
+
+.FormButton.Submitproduct button:hover {
+    background: #221177;
+}
+
+.Submitformproduct {
+    text-decoration: none;
+    margin-left: -470px;
+   
+}
