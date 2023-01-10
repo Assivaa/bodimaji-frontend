@@ -13,6 +13,9 @@ import Dashboard from "./pages/admin/dashboard";
 import DashboardMenu from "./pages/dashboardmenu/DashboardMenu.jsx";
 import DashboardArticle from "./pages/dashboardarticle/DashboardArticle.jsx";
 import DashboardProduct from "./pages/dashboardproduct/DashboardProduct.jsx";
+import Information from "./pages/information/Information.jsx";
+import Payment from "./pages/payment/Payment.jsx";
+import Shipping from "./pages/shipping/Shipping.jsx";
 
 function App() {
   return (
@@ -39,6 +42,11 @@ function App() {
             <Route path="menu" element={<DashboardMenu />} />
             <Route path="article" element={<DashboardArticle />} />
             <Route path="product" element={<DashboardProduct />} />           
+          </Route>
+          <Route path="/checkout">
+            <Route path="information" element={<Information />} /> 
+            <Route path="payment" element={<Payment />} />  
+            <Route path="shipping" element={<Shipping />} /> 
           </Route>
         </Routes>
       </ScrollToTop>
