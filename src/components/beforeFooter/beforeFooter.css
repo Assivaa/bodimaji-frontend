@@ -23,7 +23,7 @@
 .circle {
   width: 101px;
   height: 101px;
-  background: #0d0d0d;
+  background: #E6E5E2;
   border-radius: 50%;
 }
 
@@ -34,4 +34,21 @@
   font-size: 24px;
   line-height: 29px;
   padding-left: 48px;
+}
+
+.circleimage{
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+
+.circleimage2{
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+
+.circleimage3{
+  margin-left: 15px;
+  margin-top: 15px;
 }
