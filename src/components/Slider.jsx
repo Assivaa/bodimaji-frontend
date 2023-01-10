@@ -22,7 +22,7 @@ const Slider = () => {
   const dispatch = useDispatch();
 
   const getCart = async () => {
-    const { data } = await axios.get(rootAPI + `/cart/${currentUser._id}`);
+    const { data } = await axios.get(rootAPI + `/cart/${currentUser.userId}`);
     setCart(data.products);
     totalCart(data);
   };
@@ -74,12 +74,6 @@ const Slider = () => {
 
   const Input = styled.div`
     padding-left: 16px;
-  `;
-
-  const ColorSelector = styled.div`
-    font-family: "Arapey";
-    font-size: 24px;
-    color: #951914;
   `;
 
   const Title = styled.div`
@@ -175,25 +169,29 @@ const Slider = () => {
               />
               <Title> {currentUser.fullname}'s Cart</Title>
               <Remove>Remove</Remove>
-              <Container>
-                {cart.map((cartItem) => (
-                  <div>
-                    <div className="menu-cart-name">{cartItem.name}</div>
-                    {/* <ColorSelector>Beige</ColorSelector> */}
-                    <Quantity>
-                      <Price>Rp{cartItem.price}</Price>
-                      <Input>
-                        <input
-                          type="number"
-                          min="1"
-                          defaultValue={cartItem.quantity}
-                          key={cartItem.productId}
-                        />
-                      </Input>
-                    </Quantity>
-                  </div>
-                ))}
-              </Container>
+              {cart ? (
+                <Container>
+                  {cart.map((cartItem) => (
+                    <div>
+                      <div className="menu-cart-name">{cartItem.name}</div>
+                      {/* <ColorSelector>Beige</ColorSelector> */}
+                      <Quantity>
+                        <Price>Rp{cartItem.price}</Price>
+                        <Input>
+                          <input
+                            type="number"
+                            min="1"
+                            defaultValue={cartItem.quantity}
+                            key={cartItem.productId}
+                          />
+                        </Input>
+                      </Quantity>
+                    </div>
+                  ))}
+                </Container>
+              ) : (
+                <Container></Container>
+              )}
               <Subtotal>
                 <div className="menu-cart-subtotal-title">Subtotal:</div>
                 <ProductPrice>Rp{total.bill}</ProductPrice>

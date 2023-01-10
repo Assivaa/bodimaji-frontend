@@ -27,10 +27,9 @@ const Product = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(quantity);
     try {
       const resp = await axios.post(rootAPI + `/cart/`, {
-        _id: currentUser._id,
+        owner: currentUser.userId,
         productId: product._id,
         quantity: quantity,
       });
