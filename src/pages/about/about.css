@@ -18,8 +18,9 @@
 
 .rectangle {
   line-height: 86px;
-  width: 900px;
-  height: 218px;
+  width: 950px;
+  max-width: 1450px;
+  max-height: 350px;
   background: #d9d9d9;
 
   font-family: "Cinzel";
@@ -28,10 +29,18 @@
   font-size: 20px;
   line-height: 27px;
   color: #000000;
-  padding-top: 125px;
+  align-items: center;
+  padding-top: 50px ;
   padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 50px;
   margin-bottom: 50px;
 }
+
+.image-bottom img{
+  box-flex: inline;
+}
+
 
 .title4 {
   font-family: "Abril Fatface";
@@ -96,6 +105,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  text-align: left;
   padding-bottom: 10px;
   padding-top: 20px;
 

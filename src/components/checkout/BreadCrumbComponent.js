@@ -1,4 +1,5 @@
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function BreadcrumbComponent() {
   return (

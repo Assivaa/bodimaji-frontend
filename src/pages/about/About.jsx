@@ -24,71 +24,64 @@ const About = () => {
                 detail.
               </div>
             </div>
-
             <div className="title3">Our Vision</div>
+            
             <div className="desc2">
               Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
               Dolor Sit Amet
               <br /> Lorem Ipsum Dolor Sit Amet
             </div>
+
+              <img
+                src={require("../../resources/images/collection-alt.jpg")}
+                alt="founder" style={{float:"right", marginTop:"-200px", marginRight:"-800px"}}
+              />
+  
 
             <div className="title3">Our Mission</div>
-            <div className="desc2">
+            <div className="desc2" style={{marginBottom:"300px"}}>
               Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
               Dolor Sit Amet
-              <br /> Lorem Ipsum Dolor Sit Amet
+              <br /> Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
+              Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
+              Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
+              Dolor Sit Amet
+              <br /> Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
+              Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
+              Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
+              Dolor Sit Amet
             </div>
-
-            <div className="title3">Meet the Founder </div>
-
-            <div className="image">
-              <img
-                src={require("../../resources/images/founder.jpeg")}
-                alt="founder"
+           
+            <br /> 
+            <div className="image-bottom">
+             <img
+                src={require("../../resources/images/collection-alt.jpg")}
+                alt="founder" style={{float:"left" , marginTop:"-200px"}}
               />
-            </div>
-
-            <div className="title2">Sabrina</div>
-            <div className="desc3">
-              Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-              Dolor Sit Amet
-              <br />
-              Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-              Dolor Sit Amet
-              <br />
-              Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-              Dolor Sit Amet
-              <br />
-              Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-              Dolor Sit Amet
-              <br />
-              Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-              Dolor Sit Amet
-            </div>
-
-            <div className="title4">Meet the Team </div>
-            <div className="desc4">
-              Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-              Dolor Sit Amet
-              <br />
-              Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
-              Dolor Sit Amet
-              <br />
-            </div>
-
-            <div className="banner">
               <img
-                src={require("../../resources/images/banner.jpeg")}
-                alt="banner"
+                src={require("../../resources/images/home-alt.jpeg")}
+                alt="founder" style={{float:"right", marginTop:"-200px", marginRight:"-750px"}}
               />
-            </div>
+              </div>
 
-            <div className="join-interact">
-              <button className="join-button">
-                Join Us
-                <img src={arrowAbout} alt="join" />
-              </button>
+              <br /> 
+              <div className="desc2" style={{marginTop:"30px" , marginBottom:"300px"}}>
+              Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Ipsum Dolor Sit Amet Lorem Ipsum
+              Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
+              Dolor Sit Amet
             </div>
+            <div className="image-bottom-right">
+             <img
+                src={require("../../resources/images/collection-alt.jpg")}
+                alt="founder" style={{float:"left" , marginTop:"-200px", marginLeft:"300px"}}
+              />
+              <img
+                src={require("../../resources/images/home-alt.jpeg")}
+                alt="founder" style={{float:"right", marginTop:"-200px", marginRight:"-650px",
+                 marginBottom:"50px"}}
+              />
+              </div>
+          
           </div>
         </div>
       </div>

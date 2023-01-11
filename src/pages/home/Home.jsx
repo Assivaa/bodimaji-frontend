@@ -3,7 +3,7 @@ import Navbar from "../../components/navbar/Navbar";
 import BeforeFooter from "../../components/beforeFooter/BeforeFooter";
 import Footer from "../../components/footer/Footer";
 import { Link } from "react-router-dom";
-import arrowRight from "../../resources/icons/icon-arrow-right.svg";
+import { ArrowRight } from 'react-bootstrap-icons';
 
 import axios from "axios";
 import "./home.css";
@@ -43,7 +43,7 @@ const Home = () => {
               <Link to="/product" className="Link">
                 Explore
               </Link>
-              <img src={arrowRight} alt="arrow-right" />
+              <ArrowRight className="ms-2" color="white" size={40} />
             </button>
           </div>
           <div className="container-item">
@@ -69,7 +69,7 @@ const Home = () => {
               <Link to="/product" className="Link">
                 See All
               </Link>
-              <img src={arrowRight} alt="article-alt" />
+                <ArrowRight className="ms-2" color="white" size={40} />
             </button>
           </div>
         </div>
@@ -96,7 +96,7 @@ const Home = () => {
               <Link to="/article" className="Link">
                 Read
               </Link>
-              <img src={arrowRight} alt="arrow-right" />
+               <ArrowRight className="ms-2" color="white" size={40} />
             </button>
           </div>
         </div>

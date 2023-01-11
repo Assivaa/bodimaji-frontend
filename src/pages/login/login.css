@@ -43,6 +43,9 @@
   background: #e6e5e2;
   border: 1px solid #951914;
   border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
   font-family: "Arapey";
   font-weight: 400;
   font-size: 20px;

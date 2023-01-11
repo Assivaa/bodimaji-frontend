@@ -7,6 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { loginFailure, loginStart, loginSuccess } from "../../redux/userSlice";
 import axios from "axios";
 import "./login.css";
+import Form from 'react-bootstrap/Form';
 import { rootAPI } from "../home/Home";
 import socialGoogle from "../../resources/icons/icon-google.svg";
 import socialFacebook from "../../resources/icons/icon-facebook.svg";
@@ -40,6 +41,7 @@ const Login = () => {
           <div className="login-form-header">
             <span>Login</span>
           </div>
+          <div className="login-form">
           <form>
             <div className="login-form-input">
               <input
@@ -47,12 +49,12 @@ const Login = () => {
                 placeholder="Username"
                 onChange={(e) => setUsername(e.target.value)}
                 required
-              ></input>
+              />
               <input
                 type="password"
                 placeholder="Password"
                 onChange={(e) => setPassword(e.target.value)}
-              ></input>
+              />
             </div>
             <div className="login-form-button login">
               <a className="login-form link login">
@@ -62,6 +64,7 @@ const Login = () => {
               </a>
             </div>
           </form>
+          </div>
           <div className="login-form-term">
             <span>Forgot Password?</span>
           </div>

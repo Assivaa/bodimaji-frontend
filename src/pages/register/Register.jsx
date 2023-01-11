@@ -95,6 +95,7 @@ const Register = () => {
                 <span>Create Account</span>
                 <p> Join as part of bodimaji</p>
               </div>
+              <div className="register-form">
               <form onSubmit={handleSubmit} className="register-form-input">
                 <input
                   type="text"
@@ -184,9 +185,8 @@ const Register = () => {
                 >
                   Must match the first password input field.
                 </p>
-                <div className="register-form-term">
-                  <input type="checkbox" />{" "}
-                  <span>I agree to Terms & Conditions</span>
+                <div className="register-form-term" style={{display:"inline-block"}}>
+                  <input type="checkbox" />{" "}<span>I agree to Terms & Conditions</span>
                 </div>
                 <div className="register-form-button register">
                   <button
@@ -216,6 +216,7 @@ const Register = () => {
               </div>
             </div>
           </div>{" "}
+              </div>
         </section>
       )}
       <BeforeFooter />
