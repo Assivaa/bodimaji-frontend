@@ -1,8 +1,10 @@
 .main {
   font-family: "Inter";
   font-style: normal;
+  background-size: auto;
   font-weight: 400;
   padding: 88px 0px 0px 80px;
+  background-size: auto;
 }
 
 .container {
@@ -12,6 +14,7 @@
 
 .container-item img {
   object-fit: cover;
+  padding-right: 25px;
   width: 630px;
   height: 501px;
 }
@@ -20,31 +23,34 @@
   font-family: "Abril Fatface";
   font-style: normal;
   font-weight: 400;
-  font-size: 64px;
+  font-size: 60px;
+  margin-top: 30px;
+  margin-left: -80px;
   font-weight: 700px;
-  padding-bottom: 14px;
-  line-height: 86px;
+  padding-bottom: 7px;
+  line-height: 64px;
 }
 
 .description {
   font-family: "Arapey";
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
-  padding-bottom: 88px;
+  font-size: 24px;
+  margin-left: -80px;
+  padding-bottom: 40px;
   line-height: 35px;
 }
 
 .button-explore {
-  font-weight: 700;
-  font-size: 32px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 39px;
   color: #fcfcfc;
   text-align: center;
   text-decoration: none;
-  padding: 14px 54px;
+  padding: 8px 68px;
+  margin-left: -80px;
   background: #272727;
   border: 1px solid #272727;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);

@@ -1,5 +1,5 @@
 import React from 'react';
-import NavbarComponent from '../../components/checkout/NavbarComponent';
+import Navbar from "../../components/navbar/Navbar";
 import BreadcrumbComponent from '../../components/checkout/BreadCrumbComponent';
 import FormComponentInformation from '../../components/checkout/FormComponentInformation';
 import FormTotalPrice from '../../components/checkout/FormTotalPrice';
@@ -9,7 +9,7 @@ import Col from 'react-bootstrap/Col';
 function Information() {
   return (
     <div className="Information">
-      <NavbarComponent />
+      <Navbar />
       <FormTotalPrice />
       <BreadcrumbComponent />
       <h5 className="tagline1 ms-5 mt-5"><strong>Contact Information</strong></h5>

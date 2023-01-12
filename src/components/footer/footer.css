@@ -1,6 +1,7 @@
 .footer {
   background: #fcfcfc;
-  height: 245px;
+  height: 100%;
+  width: 100%;
   padding: 39px 80px 0px 80px;
   font-family: "Inter";
   font-style: normal;

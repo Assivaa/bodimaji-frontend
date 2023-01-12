@@ -35,15 +35,15 @@ const Home = () => {
       <div className="main">
         <div className="container">
           <div className="container-item">
-            <div className="header">Made for all bodies</div>
+            <div className="header">Made for <br /> all bodies</div>
             <div className="description">
-              Size-inclusive fashion is a human right
+              Size-inclusive fashion <br /> is a human right
             </div>
             <button className="button-explore">
               <Link to="/product" className="Link">
                 Explore
               </Link>
-              <ArrowRight className="ms-2" color="white" size={40} />
+              <ArrowRight className="ms-4" color="white" size={40} />
             </button>
           </div>
           <div className="container-item">

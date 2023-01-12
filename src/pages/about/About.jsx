@@ -33,8 +33,8 @@ const About = () => {
             </div>
 
               <img
-                src={require("../../resources/images/collection-alt.jpg")}
-                alt="founder" style={{float:"right", marginTop:"-200px", marginRight:"-800px"}}
+                src={require("../../resources/images/vision.jpg")}
+                alt="founder" style={{float:"right", paddingTop:"5px", marginTop:"-140px",marginRight:"-600px", paddingLeft:"80px"}}
               />
   
 
@@ -53,31 +53,30 @@ const About = () => {
             </div>
            
             <br /> 
-            <div className="image-bottom">
+            <div className="image-bottom d-flex inline">
              <img
-                src={require("../../resources/images/collection-alt.jpg")}
-                alt="founder" style={{float:"left" , marginTop:"-200px"}}
+                src={require("../../resources/images/about_1.jpg")}
+                alt="founder" style={{ marginTop:"-250px"}}
               />
               <img
-                src={require("../../resources/images/home-alt.jpeg")}
-                alt="founder" style={{float:"right", marginTop:"-200px", marginRight:"-750px"}}
+                src={require("../../resources/images/about_2.jpg")}
+                alt="founder" style={{marginTop:"-250px", paddingLeft:"30px"}}
               />
               </div>
 
               <br /> 
               <div className="desc2" style={{marginTop:"30px" , marginBottom:"300px"}}>
-              Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Ipsum Dolor Sit Amet Lorem Ipsum
-              Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
+              Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet Lorem Ipsum
               Dolor Sit Amet
             </div>
-            <div className="image-bottom-right">
+            <div className="image-bottom-right  d-flex inline">
              <img
-                src={require("../../resources/images/collection-alt.jpg")}
-                alt="founder" style={{float:"left" , marginTop:"-200px", marginLeft:"300px"}}
+                src={require("../../resources/images/about_4.jpg")}
+                alt="founder" style={{marginTop:"-200px", marginLeft:"300px"}}
               />
               <img
-                src={require("../../resources/images/home-alt.jpeg")}
-                alt="founder" style={{float:"right", marginTop:"-200px", marginRight:"-650px",
+                src={require("../../resources/images/about_3.jpg")}
+                alt="founder" style={{ marginTop:"-200px",paddingLeft:"30px",
                  marginBottom:"50px"}}
               />
               </div>
